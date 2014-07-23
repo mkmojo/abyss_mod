@@ -445,6 +445,15 @@ void NetworkSequenceCollection::runControl()
 				m_data.setDeletedKey();
 				m_data.shrink();
 				size_t numLoaded = m_comm.reduce(m_data.size());
+#ifndef DEBUG_QQY_ENABLE
+                                m_comm.gather(qqy_m_numMPIcalls_array, &m_MPI_count);
+                                for(int i=0; i<opt::numProc; i++)
+                                {
+                                    std::cout << "NAS_LOADING PHASE" << std::endl;
+                                    std::cout << i<< ": " << qqy_m_numMPIcalls_array[i] << " calls.";
+                                }
+                                std::cout<< std::endl;
+#endif                           
 				cout << "Loaded " << numLoaded << " k-mer. "
 					"At least "
 					<< toSI(numLoaded * sizeof (value_type))
