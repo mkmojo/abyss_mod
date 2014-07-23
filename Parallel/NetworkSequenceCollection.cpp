@@ -449,7 +449,7 @@ void NetworkSequenceCollection::runControl()
                                 m_comm.gather(qqy_m_numMPIcalls_array, &m_MPI_count);
                                 for(int i=0; i<opt::numProc; i++)
                                 {
-                                    std::cout << i<< ": " << qqy_m_numMPIcalls_array[i] << " calls.";
+                                    std::cout << i<< ": " << qqy_m_numMPIcalls_array[i] << " calls."<<std::endl;
                                 }
                                 std::cout<< std::endl;
 #endif                           
