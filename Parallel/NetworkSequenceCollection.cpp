@@ -449,7 +449,6 @@ void NetworkSequenceCollection::runControl()
                                 m_comm.gather(qqy_m_numMPIcalls_array, &m_MPI_count);
                                 for(int i=0; i<opt::numProc; i++)
                                 {
-                                    std::cout << "NAS_LOADING PHASE" << std::endl;
                                     std::cout << i<< ": " << qqy_m_numMPIcalls_array[i] << " calls.";
                                 }
                                 std::cout<< std::endl;
