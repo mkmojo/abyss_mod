@@ -1,0 +1,3 @@
+#!/bin/sh
+
+./configure --prefix=/nethome/rnihalani3/research/abyss-1.5.1/execs_S_timer --with-boost=/nethome/rnihalani3/softwares/boost_1_55_0/boost/ --with-mpi=/nethome/rnihalani3/softwares/openmpi CPPFLAGS=-I/nethome/rnihalani3/softwares/sparsehash-2.0.2/include/

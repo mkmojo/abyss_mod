@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="94">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="ABYSS">
+        <in>Abyss.cpp</in>
+      </df>
+      <df name="AdjList">
+        <in>AdjList.cpp</in>
+      </df>
+      <df name="Align">
+        <in>Options.h</in>
+        <in>align.cc</in>
+        <in>alignGlobal.cc</in>
+        <in>alignGlobal.h</in>
+        <in>dialign.cpp</in>
+        <in>dialign.h</in>
+        <in>dna_diag_prob.cc</in>
+        <in>mergepairs.cc</in>
+        <in>smith_waterman.cpp</in>
+        <in>smith_waterman.h</in>
+      </df>
+      <df name="Assembly">
+        <in>AssemblyAlgorithms.cpp</in>
+        <in>AssemblyAlgorithms.h</in>
+        <in>BranchGroup.cpp</in>
+        <in>BranchGroup.h</in>
+        <in>BranchRecord.cpp</in>
+        <in>BranchRecord.h</in>
+        <in>DotWriter.cpp</in>
+        <in>DotWriter.h</in>
+        <in>ISequenceCollection.h</in>
+        <in>KmerData.h</in>
+        <in>Options.cpp</in>
+        <in>Options.h</in>
+        <in>SequenceCollection.cpp</in>
+        <in>SequenceCollection.h</in>
+      </df>
+      <df name="bin">
+      </df>
+      <df name="Common">
+        <in>Algorithms.h</in>
+        <in>Alignment.h</in>
+        <in>BitUtil.h</in>
+        <in>ConstString.h</in>
+        <in>ContigID.cpp</in>
+        <in>ContigID.h</in>
+        <in>ContigNode.h</in>
+        <in>ContigPath.h</in>
+        <in>ContigProperties.h</in>
+        <in>Dictionary.h</in>
+        <in>Estimate.h</in>
+        <in>Fcontrol.cpp</in>
+        <in>Fcontrol.h</in>
+        <in>Functional.h</in>
+        <in>Hash.h</in>
+        <in>HashFunction.h</in>
+        <in>Histogram.cpp</in>
+        <in>Histogram.h</in>
+        <in>IOUtil.h</in>
+        <in>Iterator.h</in>
+        <in>Kmer.cpp</in>
+        <in>Kmer.h</in>
+        <in>Log.cpp</in>
+        <in>Log.h</in>
+        <in>MemoryUtil.h</in>
+        <in>Options.cpp</in>
+        <in>Options.h</in>
+        <in>PMF.h</in>
+        <in>SAM.h</in>
+        <in>Sense.h</in>
+        <in>SeqExt.cpp</in>
+        <in>SeqExt.h</in>
+        <in>Sequence.cpp</in>
+        <in>Sequence.h</in>
+        <in>SignalHandler.cpp</in>
+        <in>SignalHandler.h</in>
+        <in>StringUtil.h</in>
+        <in>SuffixArray.h</in>
+        <in>Timer.cpp</in>
+        <in>Timer.h</in>
+        <in>Uncompress.cpp</in>
+        <in>Uncompress.h</in>
+        <in>UnorderedMap.h</in>
+        <in>UnorderedSet.h</in>
+        <in>Warnings.h</in>
+        <in>cholesky.hpp</in>
+        <in>city.cc</in>
+        <in>city.h</in>
+      </df>
+      <df name="connectpairs">
+        <in>BloomFilter.h</in>
+        <in>CountingBloomFilter.h</in>
+        <in>DBGBloom.h</in>
+        <in>DBGBloomAlgorithms.h</in>
+        <in>connectpairs.cc</in>
+      </df>
+      <df name="Consensus">
+        <in>Consensus.cpp</in>
+      </df>
+      <df name="DAssembler">
+        <in>DAssembler.cpp</in>
+        <in>RotatedRead.cpp</in>
+        <in>RotatedRead.h</in>
+        <in>Rotation.h</in>
+      </df>
+      <df name="DataLayer">
+        <in>FastaIndex.h</in>
+        <in>FastaInterleave.h</in>
+        <in>FastaReader.cpp</in>
+        <in>FastaReader.h</in>
+        <in>FastaWriter.cpp</in>
+        <in>FastaWriter.h</in>
+        <in>Options.h</in>
+        <in>abyss-tofastq.cc</in>
+        <in>fac.cc</in>
+      </df>
+      <df name="dialign">
+        <in>alig.c</in>
+        <in>assemble.c</in>
+        <in>diag.c</in>
+        <in>io.c</in>
+        <in>io.h</in>
+        <in>museq.c</in>
+        <in>orf.c</in>
+        <in>orf.h</in>
+        <in>parameters.c</in>
+        <in>parameters.h</in>
+        <in>prob.c</in>
+        <in>struct.h</in>
+        <in>translate.c</in>
+        <in>translate.h</in>
+      </df>
+      <df name="DistanceEst">
+        <in>DistanceEst.cpp</in>
+        <in>MLE.cpp</in>
+        <in>MLE.h</in>
+      </df>
+      <df name="doc">
+      </df>
+      <df name="FilterGraph">
+        <in>FilterGraph.cpp</in>
+      </df>
+      <df name="FMIndex">
+        <in>BitArrays.h</in>
+        <in>DAWG.h</in>
+        <in>FMIndex.h</in>
+        <in>abyss-dawg.cc</in>
+        <in>bit_array.cc</in>
+        <in>bit_array.h</in>
+        <in>count.cc</in>
+        <in>sais.hxx</in>
+      </df>
+      <df name="GapFiller">
+        <in>gapfill.cpp</in>
+        <in>gapfill.h</in>
+      </df>
+      <df name="Graph">
+        <in>AdjIO.h</in>
+        <in>AllPathsSearch.h</in>
+        <in>AsqgIO.h</in>
+        <in>Assemble.h</in>
+        <in>BidirectionalBFS.h</in>
+        <in>BidirectionalBFSVisitor.h</in>
+        <in>BreadthFirstSearch.h</in>
+        <in>ConstrainedBFSVisitor.h</in>
+        <in>ConstrainedBidiBFSVisitor.h</in>
+        <in>ConstrainedSearch.h</in>
+        <in>ContigGraph.h</in>
+        <in>ContigGraphAlgorithms.h</in>
+        <in>DefaultColorMap.h</in>
+        <in>DepthFirstSearch.h</in>
+        <in>DirectedGraph.h</in>
+        <in>DistIO.h</in>
+        <in>DotIO.h</in>
+        <in>FastaIO.h</in>
+        <in>GraphAlgorithms.h</in>
+        <in>GraphIO.h</in>
+        <in>GraphUtil.h</in>
+        <in>HashGraph.h</in>
+        <in>Options.h</in>
+        <in>Path.h</in>
+        <in>PopBubbles.h</in>
+        <in>Properties.h</in>
+        <in>SAMIO.h</in>
+        <in>gc.cc</in>
+        <in>todot.cc</in>
+      </df>
+      <df name="KAligner">
+        <in>Aligner.cpp</in>
+        <in>Aligner.h</in>
+        <in>KAligner.cpp</in>
+        <in>Options.h</in>
+        <in>Pipe.h</in>
+        <in>PipeMux.h</in>
+        <in>Semaphore.h</in>
+      </df>
+      <df name="kmerprint">
+        <in>kmerprint.cc</in>
+      </df>
+      <df name="Layout">
+        <in>layout.cc</in>
+      </df>
+      <df name="Map">
+        <in>index.cc</in>
+        <in>map.cc</in>
+        <in>overlap.cc</in>
+      </df>
+      <df name="MergePaths">
+        <in>MergeContigs.cpp</in>
+        <in>MergePaths.cpp</in>
+        <in>PathConsensus.cpp</in>
+      </df>
+      <df name="Misc">
+      </df>
+      <df name="Overlap">
+        <in>Overlap.cpp</in>
+      </df>
+      <df name="Parallel">
+        <in>CommLayer.cpp</in>
+        <in>CommLayer.h</in>
+        <in>MessageBuffer.cpp</in>
+        <in>MessageBuffer.h</in>
+        <in>Messages.cpp</in>
+        <in>Messages.h</in>
+        <in>NetworkSequenceCollection.cpp</in>
+        <in>NetworkSequenceCollection.h</in>
+        <in>parallelAbyss.cpp</in>
+      </df>
+      <df name="ParseAligns">
+        <in>ParseAligns.cpp</in>
+        <in>abyss-fixmate.cc</in>
+      </df>
+      <df name="PathOverlap">
+        <in>PathOverlap.cpp</in>
+      </df>
+      <df name="PopBubbles">
+        <in>PopBubbles.cpp</in>
+      </df>
+      <df name="Scaffold">
+        <in>drawgraph.cc</in>
+        <in>junction.cc</in>
+        <in>longseqdist.cpp</in>
+        <in>scaffold.cc</in>
+      </df>
+      <df name="SimpleGraph">
+        <in>SimpleGraph.cpp</in>
+      </df>
+      <df name="Unittest">
+        <df name="Common">
+          <in>BitUtilTest.cpp</in>
+          <in>HistogramTest.cpp</in>
+          <in>Sequence.cc</in>
+          <in>StringUtilTest.cpp</in>
+        </df>
+        <df name="connectpairs">
+          <in>BloomFilter.cc</in>
+          <in>DBGBloomAlgorithmsTest.cpp</in>
+        </df>
+        <df name="Graph">
+          <in>AllPathsSearchTest.cpp</in>
+          <in>BidirectionalBFSTest.cpp</in>
+          <in>ConstrainedBFSVisitorTest.cpp</in>
+          <in>ConstrainedBidiBFSVisitorTest.cpp</in>
+          <in>HashGraphTest.cpp</in>
+        </df>
+      </df>
+      <in>config.h</in>
+    </df>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>4</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir>.</rundir>
+        <buildfirst>false</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>

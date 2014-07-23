@@ -1,0 +1,252 @@
+/Applications/Xcode.app/Contents/Developer/usr/bin/make  all-recursive
+Making all in bin
+make[2]: Nothing to be done for `all'.
+Making all in doc
+make[2]: Nothing to be done for `all'.
+Making all in Assembly
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I../Common -I../DataLayer -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT libassembly_a-AssemblyAlgorithms.o -MD -MP -MF .deps/libassembly_a-AssemblyAlgorithms.Tpo -c -o libassembly_a-AssemblyAlgorithms.o `test -f 'AssemblyAlgorithms.cpp' || echo './'`AssemblyAlgorithms.cpp
+mv -f .deps/libassembly_a-AssemblyAlgorithms.Tpo .deps/libassembly_a-AssemblyAlgorithms.Po
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I../Common -I../DataLayer -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT libassembly_a-BranchGroup.o -MD -MP -MF .deps/libassembly_a-BranchGroup.Tpo -c -o libassembly_a-BranchGroup.o `test -f 'BranchGroup.cpp' || echo './'`BranchGroup.cpp
+mv -f .deps/libassembly_a-BranchGroup.Tpo .deps/libassembly_a-BranchGroup.Po
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I../Common -I../DataLayer -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT libassembly_a-BranchRecord.o -MD -MP -MF .deps/libassembly_a-BranchRecord.Tpo -c -o libassembly_a-BranchRecord.o `test -f 'BranchRecord.cpp' || echo './'`BranchRecord.cpp
+mv -f .deps/libassembly_a-BranchRecord.Tpo .deps/libassembly_a-BranchRecord.Po
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I../Common -I../DataLayer -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT libassembly_a-DotWriter.o -MD -MP -MF .deps/libassembly_a-DotWriter.Tpo -c -o libassembly_a-DotWriter.o `test -f 'DotWriter.cpp' || echo './'`DotWriter.cpp
+mv -f .deps/libassembly_a-DotWriter.Tpo .deps/libassembly_a-DotWriter.Po
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I../Common -I../DataLayer -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT libassembly_a-Options.o -MD -MP -MF .deps/libassembly_a-Options.Tpo -c -o libassembly_a-Options.o `test -f 'Options.cpp' || echo './'`Options.cpp
+mv -f .deps/libassembly_a-Options.Tpo .deps/libassembly_a-Options.Po
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I../Common -I../DataLayer -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT libassembly_a-SequenceCollection.o -MD -MP -MF .deps/libassembly_a-SequenceCollection.Tpo -c -o libassembly_a-SequenceCollection.o `test -f 'SequenceCollection.cpp' || echo './'`SequenceCollection.cpp
+mv -f .deps/libassembly_a-SequenceCollection.Tpo .deps/libassembly_a-SequenceCollection.Po
+rm -f libassembly.a
+ar cru libassembly.a libassembly_a-AssemblyAlgorithms.o libassembly_a-BranchGroup.o libassembly_a-BranchRecord.o libassembly_a-DotWriter.o libassembly_a-Options.o libassembly_a-SequenceCollection.o 
+ranlib libassembly.a
+Making all in Common
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT libcommon_a-ContigID.o -MD -MP -MF .deps/libcommon_a-ContigID.Tpo -c -o libcommon_a-ContigID.o `test -f 'ContigID.cpp' || echo './'`ContigID.cpp
+mv -f .deps/libcommon_a-ContigID.Tpo .deps/libcommon_a-ContigID.Po
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT libcommon_a-Fcontrol.o -MD -MP -MF .deps/libcommon_a-Fcontrol.Tpo -c -o libcommon_a-Fcontrol.o `test -f 'Fcontrol.cpp' || echo './'`Fcontrol.cpp
+mv -f .deps/libcommon_a-Fcontrol.Tpo .deps/libcommon_a-Fcontrol.Po
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT libcommon_a-Histogram.o -MD -MP -MF .deps/libcommon_a-Histogram.Tpo -c -o libcommon_a-Histogram.o `test -f 'Histogram.cpp' || echo './'`Histogram.cpp
+mv -f .deps/libcommon_a-Histogram.Tpo .deps/libcommon_a-Histogram.Po
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT libcommon_a-Kmer.o -MD -MP -MF .deps/libcommon_a-Kmer.Tpo -c -o libcommon_a-Kmer.o `test -f 'Kmer.cpp' || echo './'`Kmer.cpp
+mv -f .deps/libcommon_a-Kmer.Tpo .deps/libcommon_a-Kmer.Po
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT libcommon_a-Log.o -MD -MP -MF .deps/libcommon_a-Log.Tpo -c -o libcommon_a-Log.o `test -f 'Log.cpp' || echo './'`Log.cpp
+mv -f .deps/libcommon_a-Log.Tpo .deps/libcommon_a-Log.Po
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT libcommon_a-Options.o -MD -MP -MF .deps/libcommon_a-Options.Tpo -c -o libcommon_a-Options.o `test -f 'Options.cpp' || echo './'`Options.cpp
+mv -f .deps/libcommon_a-Options.Tpo .deps/libcommon_a-Options.Po
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT libcommon_a-SeqExt.o -MD -MP -MF .deps/libcommon_a-SeqExt.Tpo -c -o libcommon_a-SeqExt.o `test -f 'SeqExt.cpp' || echo './'`SeqExt.cpp
+mv -f .deps/libcommon_a-SeqExt.Tpo .deps/libcommon_a-SeqExt.Po
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT libcommon_a-Sequence.o -MD -MP -MF .deps/libcommon_a-Sequence.Tpo -c -o libcommon_a-Sequence.o `test -f 'Sequence.cpp' || echo './'`Sequence.cpp
+mv -f .deps/libcommon_a-Sequence.Tpo .deps/libcommon_a-Sequence.Po
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT libcommon_a-SignalHandler.o -MD -MP -MF .deps/libcommon_a-SignalHandler.Tpo -c -o libcommon_a-SignalHandler.o `test -f 'SignalHandler.cpp' || echo './'`SignalHandler.cpp
+mv -f .deps/libcommon_a-SignalHandler.Tpo .deps/libcommon_a-SignalHandler.Po
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT libcommon_a-Timer.o -MD -MP -MF .deps/libcommon_a-Timer.Tpo -c -o libcommon_a-Timer.o `test -f 'Timer.cpp' || echo './'`Timer.cpp
+mv -f .deps/libcommon_a-Timer.Tpo .deps/libcommon_a-Timer.Po
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT libcommon_a-Uncompress.o -MD -MP -MF .deps/libcommon_a-Uncompress.Tpo -c -o libcommon_a-Uncompress.o `test -f 'Uncompress.cpp' || echo './'`Uncompress.cpp
+mv -f .deps/libcommon_a-Uncompress.Tpo .deps/libcommon_a-Uncompress.Po
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT libcommon_a-city.o -MD -MP -MF .deps/libcommon_a-city.Tpo -c -o libcommon_a-city.o `test -f 'city.cc' || echo './'`city.cc
+mv -f .deps/libcommon_a-city.Tpo .deps/libcommon_a-city.Po
+rm -f libcommon.a
+ar cru libcommon.a libcommon_a-ContigID.o libcommon_a-Fcontrol.o libcommon_a-Histogram.o libcommon_a-Kmer.o libcommon_a-Log.o libcommon_a-Options.o libcommon_a-SeqExt.o libcommon_a-Sequence.o libcommon_a-SignalHandler.o libcommon_a-Timer.o libcommon_a-Uncompress.o libcommon_a-city.o 
+ranlib libcommon.a
+Making all in DataLayer
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I../Common -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT libdatalayer_a-FastaReader.o -MD -MP -MF .deps/libdatalayer_a-FastaReader.Tpo -c -o libdatalayer_a-FastaReader.o `test -f 'FastaReader.cpp' || echo './'`FastaReader.cpp
+mv -f .deps/libdatalayer_a-FastaReader.Tpo .deps/libdatalayer_a-FastaReader.Po
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I../Common -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT libdatalayer_a-FastaWriter.o -MD -MP -MF .deps/libdatalayer_a-FastaWriter.Tpo -c -o libdatalayer_a-FastaWriter.o `test -f 'FastaWriter.cpp' || echo './'`FastaWriter.cpp
+mv -f .deps/libdatalayer_a-FastaWriter.Tpo .deps/libdatalayer_a-FastaWriter.Po
+rm -f libdatalayer.a
+ar cru libdatalayer.a libdatalayer_a-FastaReader.o libdatalayer_a-FastaWriter.o 
+ranlib libdatalayer.a
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I../Common -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT abyss_fac-fac.o -MD -MP -MF .deps/abyss_fac-fac.Tpo -c -o abyss_fac-fac.o `test -f 'fac.cc' || echo './'`fac.cc
+mv -f .deps/abyss_fac-fac.Tpo .deps/abyss_fac-fac.Po
+/usr/bin/g++ -Wall -Wextra -Werror -g3 -gdwarf-2   -o abyss-fac abyss_fac-fac.o libdatalayer.a ../Common/libcommon.a -ldl -lm 
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I../Common -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT abyss_tofastq-abyss-tofastq.o -MD -MP -MF .deps/abyss_tofastq-abyss-tofastq.Tpo -c -o abyss_tofastq-abyss-tofastq.o `test -f 'abyss-tofastq.cc' || echo './'`abyss-tofastq.cc
+mv -f .deps/abyss_tofastq-abyss-tofastq.Tpo .deps/abyss_tofastq-abyss-tofastq.Po
+/usr/bin/g++ -Wall -Wextra -Werror -g3 -gdwarf-2   -o abyss-tofastq abyss_tofastq-abyss-tofastq.o libdatalayer.a ../Common/libcommon.a -ldl -lm 
+Making all in FMIndex
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I../Common -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT libfmindex_a-bit_array.o -MD -MP -MF .deps/libfmindex_a-bit_array.Tpo -c -o libfmindex_a-bit_array.o `test -f 'bit_array.cc' || echo './'`bit_array.cc
+mv -f .deps/libfmindex_a-bit_array.Tpo .deps/libfmindex_a-bit_array.Po
+rm -f libfmindex.a
+ar cru libfmindex.a libfmindex_a-bit_array.o 
+ranlib libfmindex.a
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I../Common -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT abyss_count-count.o -MD -MP -MF .deps/abyss_count-count.Tpo -c -o abyss_count-count.o `test -f 'count.cc' || echo './'`count.cc
+mv -f .deps/abyss_count-count.Tpo .deps/abyss_count-count.Po
+/usr/bin/g++ -Wall -Wextra -Werror -g3 -gdwarf-2   -o abyss-count abyss_count-count.o libfmindex.a ../Common/libcommon.a -ldl -lm 
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I../Common -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT abyss_dawg-abyss-dawg.o -MD -MP -MF .deps/abyss_dawg-abyss-dawg.Tpo -c -o abyss_dawg-abyss-dawg.o `test -f 'abyss-dawg.cc' || echo './'`abyss-dawg.cc
+mv -f .deps/abyss_dawg-abyss-dawg.Tpo .deps/abyss_dawg-abyss-dawg.Po
+/usr/bin/g++ -Wall -Wextra -Werror -g3 -gdwarf-2   -o abyss-dawg abyss_dawg-abyss-dawg.o libfmindex.a ../Common/libcommon.a -ldl -lm 
+Making all in Graph
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I../Common -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT abyss_gc-gc.o -MD -MP -MF .deps/abyss_gc-gc.Tpo -c -o abyss_gc-gc.o `test -f 'gc.cc' || echo './'`gc.cc
+mv -f .deps/abyss_gc-gc.Tpo .deps/abyss_gc-gc.Po
+/usr/bin/g++ -Wall -Wextra -Werror -g3 -gdwarf-2   -o abyss-gc abyss_gc-gc.o ../Common/libcommon.a -ldl -lm 
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I../Common -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT abyss_todot-todot.o -MD -MP -MF .deps/abyss_todot-todot.Tpo -c -o abyss_todot-todot.o `test -f 'todot.cc' || echo './'`todot.cc
+mv -f .deps/abyss_todot-todot.Tpo .deps/abyss_todot-todot.Po
+/usr/bin/g++ -Wall -Wextra -Werror -g3 -gdwarf-2 -L.  -o abyss-todot abyss_todot-todot.o ../Common/libcommon.a -ldl -lm 
+Making all in dialign
+depbase=`echo alig.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+	/usr/bin/gcc -DHAVE_CONFIG_H -I. -I..   -I.      -g3 -gdwarf-2 -MT alig.o -MD -MP -MF $depbase.Tpo -c -o alig.o alig.c &&\
+	mv -f $depbase.Tpo $depbase.Po
+depbase=`echo assemble.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+	/usr/bin/gcc -DHAVE_CONFIG_H -I. -I..   -I.      -g3 -gdwarf-2 -MT assemble.o -MD -MP -MF $depbase.Tpo -c -o assemble.o assemble.c &&\
+	mv -f $depbase.Tpo $depbase.Po
+assemble.c:37:32: warning: inline function 'find_eqc' is not defined [-Wundefined-inline]
+extern inline struct algn_pos *find_eqc(struct algn_pos **ap, int seqnum, int pos);
+                               ^
+assemble.c:115:9: note: used here
+  tap = find_eqc(ap, s1, sp1);
+        ^
+assemble.c:13:20: warning: inline function 'calc_weight' is not defined [-Wundefined-inline]
+extern inline void calc_weight(struct diag* dg, struct scr_matrix* smatrix, 
+                   ^
+assemble.c:459:4: note: used here
+          calc_weight(dg, smatrix, pdist);
+          ^
+assemble.c:40:20: warning: inline function 'align_diag' is not defined [-Wundefined-inline]
+extern inline char align_diag(struct alignment *algn, struct scr_matrix *smatrix, struct diag* dg);
+                   ^
+assemble.c:532:24: note: used here
+          alignedSomething =  align_diag(algn, smatrix, dg) || alignedSomething;
+                              ^
+3 warnings generated.
+depbase=`echo diag.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+	/usr/bin/gcc -DHAVE_CONFIG_H -I. -I..   -I.      -g3 -gdwarf-2 -MT diag.o -MD -MP -MF $depbase.Tpo -c -o diag.o diag.c &&\
+	mv -f $depbase.Tpo $depbase.Po
+diag.c:739:9: warning: equality comparison result unused [-Wunused-comparison]
+                  sdg == NULL;
+                  ~~~~^~~~~~~
+diag.c:739:9: note: use '=' to turn this equality comparison into an assignment
+                  sdg == NULL;
+                      ^~
+                      =
+1 warning generated.
+depbase=`echo io.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+	/usr/bin/gcc -DHAVE_CONFIG_H -I. -I..   -I.      -g3 -gdwarf-2 -MT io.o -MD -MP -MF $depbase.Tpo -c -o io.o io.c &&\
+	mv -f $depbase.Tpo $depbase.Po
+depbase=`echo orf.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+	/usr/bin/gcc -DHAVE_CONFIG_H -I. -I..   -I.      -g3 -gdwarf-2 -MT orf.o -MD -MP -MF $depbase.Tpo -c -o orf.o orf.c &&\
+	mv -f $depbase.Tpo $depbase.Po
+depbase=`echo parameters.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+	/usr/bin/gcc -DHAVE_CONFIG_H -I. -I..   -I.      -g3 -gdwarf-2 -MT parameters.o -MD -MP -MF $depbase.Tpo -c -o parameters.o parameters.c &&\
+	mv -f $depbase.Tpo $depbase.Po
+depbase=`echo prob.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+	/usr/bin/gcc -DHAVE_CONFIG_H -I. -I..   -I.      -g3 -gdwarf-2 -MT prob.o -MD -MP -MF $depbase.Tpo -c -o prob.o prob.c &&\
+	mv -f $depbase.Tpo $depbase.Po
+depbase=`echo translate.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+	/usr/bin/gcc -DHAVE_CONFIG_H -I. -I..   -I.      -g3 -gdwarf-2 -MT translate.o -MD -MP -MF $depbase.Tpo -c -o translate.o translate.c &&\
+	mv -f $depbase.Tpo $depbase.Po
+rm -f libdialign.a
+ar cru libdialign.a alig.o assemble.o diag.o io.o orf.o parameters.o prob.o translate.o 
+ranlib libdialign.a
+depbase=`echo museq.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+	/usr/bin/gcc -DHAVE_CONFIG_H -I. -I..   -I.      -g3 -gdwarf-2 -MT museq.o -MD -MP -MF $depbase.Tpo -c -o museq.o museq.c &&\
+	mv -f $depbase.Tpo $depbase.Po
+museq.c:168:2: warning: implicit declaration of function 'free_diag' is invalid in C99 [-Wimplicit-function-declaration]
+        free_diag(adcol.diags[i]);
+        ^
+museq.c:278:27: warning: implicit declaration of function 'free_alignment' is invalid in C99 [-Wimplicit-function-declaration]
+    if(! para->FAST_MODE) free_alignment(algn);
+                          ^
+2 warnings generated.
+/usr/bin/gcc  -g3 -gdwarf-2   -o dialign museq.o libdialign.a -ldl -lm 
+Making all in Align
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I../Common -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT libalign_a-alignGlobal.o -MD -MP -MF .deps/libalign_a-alignGlobal.Tpo -c -o libalign_a-alignGlobal.o `test -f 'alignGlobal.cc' || echo './'`alignGlobal.cc
+mv -f .deps/libalign_a-alignGlobal.Tpo .deps/libalign_a-alignGlobal.Po
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I../Common -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT libalign_a-dialign.o -MD -MP -MF .deps/libalign_a-dialign.Tpo -c -o libalign_a-dialign.o `test -f 'dialign.cpp' || echo './'`dialign.cpp
+mv -f .deps/libalign_a-dialign.Tpo .deps/libalign_a-dialign.Po
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I../Common -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT libalign_a-dna_diag_prob.o -MD -MP -MF .deps/libalign_a-dna_diag_prob.Tpo -c -o libalign_a-dna_diag_prob.o `test -f 'dna_diag_prob.cc' || echo './'`dna_diag_prob.cc
+mv -f .deps/libalign_a-dna_diag_prob.Tpo .deps/libalign_a-dna_diag_prob.Po
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I../Common -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT libalign_a-smith_waterman.o -MD -MP -MF .deps/libalign_a-smith_waterman.Tpo -c -o libalign_a-smith_waterman.o `test -f 'smith_waterman.cpp' || echo './'`smith_waterman.cpp
+mv -f .deps/libalign_a-smith_waterman.Tpo .deps/libalign_a-smith_waterman.Po
+rm -f libalign.a
+ar cru libalign.a libalign_a-alignGlobal.o libalign_a-dialign.o libalign_a-dna_diag_prob.o libalign_a-smith_waterman.o 
+ranlib libalign.a
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I../Common -I../DataLayer -I.     -Wall -Wextra -Werror -Wno-unknown-pragmas -g3 -gdwarf-2 -MT abyss_align-align.o -MD -MP -MF .deps/abyss_align-align.Tpo -c -o abyss_align-align.o `test -f 'align.cc' || echo './'`align.cc
+mv -f .deps/abyss_align-align.Tpo .deps/abyss_align-align.Po
+/usr/bin/g++ -Wall -Wextra -Werror -Wno-unknown-pragmas -g3 -gdwarf-2   -o abyss-align abyss_align-align.o ./libalign.a ../dialign/libdialign.a ../DataLayer/libdatalayer.a ../Common/libcommon.a -ldl -lm 
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I../Common -I../DataLayer -I.     -Wall -Wextra -Werror -Wno-unknown-pragmas -g3 -gdwarf-2 -MT abyss_mergepairs-mergepairs.o -MD -MP -MF .deps/abyss_mergepairs-mergepairs.Tpo -c -o abyss_mergepairs-mergepairs.o `test -f 'mergepairs.cc' || echo './'`mergepairs.cc
+mv -f .deps/abyss_mergepairs-mergepairs.Tpo .deps/abyss_mergepairs-mergepairs.Po
+/usr/bin/g++ -Wall -Wextra -Werror -Wno-unknown-pragmas -g3 -gdwarf-2   -o abyss-mergepairs abyss_mergepairs-mergepairs.o ./libalign.a ../dialign/libdialign.a ../DataLayer/libdatalayer.a ../Common/libcommon.a -ldl -lm 
+Making all in ABYSS
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I../Assembly -I../Common -I../DataLayer -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT ABYSS-Abyss.o -MD -MP -MF .deps/ABYSS-Abyss.Tpo -c -o ABYSS-Abyss.o `test -f 'Abyss.cpp' || echo './'`Abyss.cpp
+mv -f .deps/ABYSS-Abyss.Tpo .deps/ABYSS-Abyss.Po
+/usr/bin/g++ -Wall -Wextra -Werror -g3 -gdwarf-2   -o ABYSS ABYSS-Abyss.o ../Assembly/libassembly.a ../DataLayer/libdatalayer.a ../Common/libcommon.a -ldl -lm 
+Making all in Parallel
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I../Assembly -I../Common -I../DataLayer -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT ABYSS_P-parallelAbyss.o -MD -MP -MF .deps/ABYSS_P-parallelAbyss.Tpo -c -o ABYSS_P-parallelAbyss.o `test -f 'parallelAbyss.cpp' || echo './'`parallelAbyss.cpp
+mv -f .deps/ABYSS_P-parallelAbyss.Tpo .deps/ABYSS_P-parallelAbyss.Po
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I../Assembly -I../Common -I../DataLayer -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT ABYSS_P-CommLayer.o -MD -MP -MF .deps/ABYSS_P-CommLayer.Tpo -c -o ABYSS_P-CommLayer.o `test -f 'CommLayer.cpp' || echo './'`CommLayer.cpp
+mv -f .deps/ABYSS_P-CommLayer.Tpo .deps/ABYSS_P-CommLayer.Po
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I../Assembly -I../Common -I../DataLayer -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT ABYSS_P-NetworkSequenceCollection.o -MD -MP -MF .deps/ABYSS_P-NetworkSequenceCollection.Tpo -c -o ABYSS_P-NetworkSequenceCollection.o `test -f 'NetworkSequenceCollection.cpp' || echo './'`NetworkSequenceCollection.cpp
+mv -f .deps/ABYSS_P-NetworkSequenceCollection.Tpo .deps/ABYSS_P-NetworkSequenceCollection.Po
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I../Assembly -I../Common -I../DataLayer -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT ABYSS_P-MessageBuffer.o -MD -MP -MF .deps/ABYSS_P-MessageBuffer.Tpo -c -o ABYSS_P-MessageBuffer.o `test -f 'MessageBuffer.cpp' || echo './'`MessageBuffer.cpp
+mv -f .deps/ABYSS_P-MessageBuffer.Tpo .deps/ABYSS_P-MessageBuffer.Po
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I../Assembly -I../Common -I../DataLayer -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT ABYSS_P-Messages.o -MD -MP -MF .deps/ABYSS_P-Messages.Tpo -c -o ABYSS_P-Messages.o `test -f 'Messages.cpp' || echo './'`Messages.cpp
+mv -f .deps/ABYSS_P-Messages.Tpo .deps/ABYSS_P-Messages.Po
+/usr/bin/g++ -Wall -Wextra -Werror -g3 -gdwarf-2   -o ABYSS-P ABYSS_P-parallelAbyss.o ABYSS_P-CommLayer.o ABYSS_P-NetworkSequenceCollection.o ABYSS_P-MessageBuffer.o ABYSS_P-Messages.o ../Assembly/libassembly.a ../Common/libcommon.a ../DataLayer/libdatalayer.a -lmpi  -ldl -lm 
+Making all in AdjList
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I../Common -I../DataLayer -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT AdjList-AdjList.o -MD -MP -MF .deps/AdjList-AdjList.Tpo -c -o AdjList-AdjList.o `test -f 'AdjList.cpp' || echo './'`AdjList.cpp
+mv -f .deps/AdjList-AdjList.Tpo .deps/AdjList-AdjList.Po
+/usr/bin/g++ -Wall -Wextra -Werror -g3 -gdwarf-2   -o AdjList AdjList-AdjList.o ../DataLayer/libdatalayer.a ../Common/libcommon.a -ldl -lm 
+Making all in connectpairs
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I../Common -I../DataLayer -I.     -Wall -Wextra -Werror -Wno-unknown-pragmas -g3 -gdwarf-2 -MT abyss_connectpairs-connectpairs.o -MD -MP -MF .deps/abyss_connectpairs-connectpairs.Tpo -c -o abyss_connectpairs-connectpairs.o `test -f 'connectpairs.cc' || echo './'`connectpairs.cc
+mv -f .deps/abyss_connectpairs-connectpairs.Tpo .deps/abyss_connectpairs-connectpairs.Po
+/usr/bin/g++ -Wall -Wextra -Werror -Wno-unknown-pragmas -g3 -gdwarf-2   -o abyss-connectpairs abyss_connectpairs-connectpairs.o ../DataLayer/libdatalayer.a ../Align/libalign.a ../Common/libcommon.a -ldl -lm 
+Making all in Consensus
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I../Common -I../DataLayer -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT Consensus-Consensus.o -MD -MP -MF .deps/Consensus-Consensus.Tpo -c -o Consensus-Consensus.o `test -f 'Consensus.cpp' || echo './'`Consensus.cpp
+mv -f .deps/Consensus-Consensus.Tpo .deps/Consensus-Consensus.Po
+/usr/bin/g++ -Wall -Wextra -Werror -g3 -gdwarf-2   -o Consensus Consensus-Consensus.o ../DataLayer/libdatalayer.a ../Common/libcommon.a -ldl -lm 
+Making all in DAssembler
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I../Common -I../DataLayer -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT DAssembler-DAssembler.o -MD -MP -MF .deps/DAssembler-DAssembler.Tpo -c -o DAssembler-DAssembler.o `test -f 'DAssembler.cpp' || echo './'`DAssembler.cpp
+mv -f .deps/DAssembler-DAssembler.Tpo .deps/DAssembler-DAssembler.Po
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I../Common -I../DataLayer -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT DAssembler-RotatedRead.o -MD -MP -MF .deps/DAssembler-RotatedRead.Tpo -c -o DAssembler-RotatedRead.o `test -f 'RotatedRead.cpp' || echo './'`RotatedRead.cpp
+mv -f .deps/DAssembler-RotatedRead.Tpo .deps/DAssembler-RotatedRead.Po
+/usr/bin/g++ -Wall -Wextra -Werror -g3 -gdwarf-2   -o DAssembler DAssembler-DAssembler.o DAssembler-RotatedRead.o ../DataLayer/libdatalayer.a ../Common/libcommon.a -ldl -lm 
+Making all in DistanceEst
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I../Common -I.     -Wall -Wextra -Werror -Wno-unknown-pragmas -g3 -gdwarf-2 -MT DistanceEst-DistanceEst.o -MD -MP -MF .deps/DistanceEst-DistanceEst.Tpo -c -o DistanceEst-DistanceEst.o `test -f 'DistanceEst.cpp' || echo './'`DistanceEst.cpp
+mv -f .deps/DistanceEst-DistanceEst.Tpo .deps/DistanceEst-DistanceEst.Po
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I../Common -I.     -Wall -Wextra -Werror -Wno-unknown-pragmas -g3 -gdwarf-2 -MT DistanceEst-MLE.o -MD -MP -MF .deps/DistanceEst-MLE.Tpo -c -o DistanceEst-MLE.o `test -f 'MLE.cpp' || echo './'`MLE.cpp
+mv -f .deps/DistanceEst-MLE.Tpo .deps/DistanceEst-MLE.Po
+/usr/bin/g++ -Wall -Wextra -Werror -Wno-unknown-pragmas -g3 -gdwarf-2   -o DistanceEst DistanceEst-DistanceEst.o DistanceEst-MLE.o ../Common/libcommon.a -ldl -lm 
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I../Common -D SAM_SEQ_QUAL=1 -I.     -Wall -Wextra -Werror -Wno-unknown-pragmas -g3 -gdwarf-2 -MT DistanceEst_ssq-DistanceEst.o -MD -MP -MF .deps/DistanceEst_ssq-DistanceEst.Tpo -c -o DistanceEst_ssq-DistanceEst.o `test -f 'DistanceEst.cpp' || echo './'`DistanceEst.cpp
+mv -f .deps/DistanceEst_ssq-DistanceEst.Tpo .deps/DistanceEst_ssq-DistanceEst.Po
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I../Common -D SAM_SEQ_QUAL=1 -I.     -Wall -Wextra -Werror -Wno-unknown-pragmas -g3 -gdwarf-2 -MT DistanceEst_ssq-MLE.o -MD -MP -MF .deps/DistanceEst_ssq-MLE.Tpo -c -o DistanceEst_ssq-MLE.o `test -f 'MLE.cpp' || echo './'`MLE.cpp
+mv -f .deps/DistanceEst_ssq-MLE.Tpo .deps/DistanceEst_ssq-MLE.Po
+/usr/bin/g++ -Wall -Wextra -Werror -Wno-unknown-pragmas -g3 -gdwarf-2   -o DistanceEst-ssq DistanceEst_ssq-DistanceEst.o DistanceEst_ssq-MLE.o ../Common/libcommon.a -ldl -lm 
+Making all in KAligner
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I../Common -I../DataLayer -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT KAligner-KAligner.o -MD -MP -MF .deps/KAligner-KAligner.Tpo -c -o KAligner-KAligner.o `test -f 'KAligner.cpp' || echo './'`KAligner.cpp
+mv -f .deps/KAligner-KAligner.Tpo .deps/KAligner-KAligner.Po
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I../Common -I../DataLayer -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT KAligner-Aligner.o -MD -MP -MF .deps/KAligner-Aligner.Tpo -c -o KAligner-Aligner.o `test -f 'Aligner.cpp' || echo './'`Aligner.cpp
+mv -f .deps/KAligner-Aligner.Tpo .deps/KAligner-Aligner.Po
+/usr/bin/g++ -Wall -Wextra -Werror -g3 -gdwarf-2   -o KAligner KAligner-KAligner.o KAligner-Aligner.o ../DataLayer/libdatalayer.a ../Common/libcommon.a -lpthread -ldl -lm 
+Making all in Layout
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I../Common -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT abyss_layout-layout.o -MD -MP -MF .deps/abyss_layout-layout.Tpo -c -o abyss_layout-layout.o `test -f 'layout.cc' || echo './'`layout.cc
+mv -f .deps/abyss_layout-layout.Tpo .deps/abyss_layout-layout.Po
+/usr/bin/g++ -Wall -Wextra -Werror -g3 -gdwarf-2   -o abyss-layout abyss_layout-layout.o ../Common/libcommon.a -ldl -lm 
+Making all in Map
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I../Common -I../DataLayer -I../FMIndex -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT abyss_index-index.o -MD -MP -MF .deps/abyss_index-index.Tpo -c -o abyss_index-index.o `test -f 'index.cc' || echo './'`index.cc
+mv -f .deps/abyss_index-index.Tpo .deps/abyss_index-index.Po
+/usr/bin/g++ -Wall -Wextra -Werror -g3 -gdwarf-2   -o abyss-index abyss_index-index.o ../FMIndex/libfmindex.a ../DataLayer/libdatalayer.a ../Common/libcommon.a -ldl -lm 
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I../Common -I../DataLayer -I../FMIndex -I.     -Wall -Wextra -Werror -Wno-unknown-pragmas -g3 -gdwarf-2 -MT abyss_map-map.o -MD -MP -MF .deps/abyss_map-map.Tpo -c -o abyss_map-map.o `test -f 'map.cc' || echo './'`map.cc
+mv -f .deps/abyss_map-map.Tpo .deps/abyss_map-map.Po
+/usr/bin/g++ -Wall -Wextra -Werror -Wno-unknown-pragmas -g3 -gdwarf-2   -o abyss-map abyss_map-map.o ../FMIndex/libfmindex.a ../DataLayer/libdatalayer.a ../Common/libcommon.a -ldl -lm 
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I../Common -I../DataLayer -I../FMIndex -D SAM_SEQ_QUAL=1 -I.     -Wall -Wextra -Werror -Wno-unknown-pragmas -g3 -gdwarf-2 -MT abyss_map_ssq-map.o -MD -MP -MF .deps/abyss_map_ssq-map.Tpo -c -o abyss_map_ssq-map.o `test -f 'map.cc' || echo './'`map.cc
+mv -f .deps/abyss_map_ssq-map.Tpo .deps/abyss_map_ssq-map.Po
+/usr/bin/g++ -Wall -Wextra -Werror -Wno-unknown-pragmas -g3 -gdwarf-2   -o abyss-map-ssq abyss_map_ssq-map.o ../FMIndex/libfmindex.a ../DataLayer/libdatalayer.a ../Common/libcommon.a -ldl -lm 
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I../Common -I../DataLayer -I../FMIndex -I.     -Wall -Wextra -Werror -Wno-unknown-pragmas -g3 -gdwarf-2 -MT abyss_overlap-overlap.o -MD -MP -MF .deps/abyss_overlap-overlap.Tpo -c -o abyss_overlap-overlap.o `test -f 'overlap.cc' || echo './'`overlap.cc
+mv -f .deps/abyss_overlap-overlap.Tpo .deps/abyss_overlap-overlap.Po
+/usr/bin/g++ -Wall -Wextra -Werror -Wno-unknown-pragmas -g3 -gdwarf-2   -o abyss-overlap abyss_overlap-overlap.o ../FMIndex/libfmindex.a ../DataLayer/libdatalayer.a ../Common/libcommon.a -ldl -lm 
+Making all in MergePaths
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I../Common -I../DataLayer -I.     -Wall -Wextra -Werror -Wno-unknown-pragmas -g3 -gdwarf-2 -MT MergePaths-MergePaths.o -MD -MP -MF .deps/MergePaths-MergePaths.Tpo -c -o MergePaths-MergePaths.o `test -f 'MergePaths.cpp' || echo './'`MergePaths.cpp
+mv -f .deps/MergePaths-MergePaths.Tpo .deps/MergePaths-MergePaths.Po
+/usr/bin/g++ -Wall -Wextra -Werror -Wno-unknown-pragmas -g3 -gdwarf-2   -o MergePaths MergePaths-MergePaths.o ../DataLayer/libdatalayer.a ../Common/libcommon.a -ldl -lm 
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I../Align -I../Common -I../DataLayer -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT MergeContigs-MergeContigs.o -MD -MP -MF .deps/MergeContigs-MergeContigs.Tpo -c -o MergeContigs-MergeContigs.o `test -f 'MergeContigs.cpp' || echo './'`MergeContigs.cpp
+mv -f .deps/MergeContigs-MergeContigs.Tpo .deps/MergeContigs-MergeContigs.Po
+/usr/bin/g++ -Wall -Wextra -Werror -g3 -gdwarf-2   -o MergeContigs MergeContigs-MergeContigs.o ../DataLayer/libdatalayer.a ../Align/libalign.a ../Common/libcommon.a -ldl -lm 
+/usr/bin/g++ -DHAVE_CONFIG_H -I. -I..  -I.. -I../Align -I../Common -I../DataLayer -I../SimpleGraph -I.     -Wall -Wextra -Werror -g3 -gdwarf-2 -MT PathConsensus-PathConsensus.o -MD -MP -MF .deps/PathConsensus-PathConsensus.Tpo -c -o PathConsensus-PathConsensus.o `test -f 'PathConsensus.cpp' || echo './'`PathConsensus.cpp
+mv -f .deps/PathConsensus-PathConsensus.Tpo .deps/PathConsensus-PathConsensus.Po
+/usr/bin/g++ -Wall -Wextra -Werror -g3 -gdwarf-2   -o PathConsensus PathConsensus-PathConsensus.o ../DataLayer/libdatalayer.a ../Align/libalign.a ../Common/libcommon.a ../dialign/libdialign.a -ldl -lm 
+Undefined symbols for architecture x86_64:
+  "std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::length() const", referenced from:
+      alignMulti(ContigGraph<DirectedGraph<ContigProperties, Distance> > const&, std::__1::vector<std::__1::vector<ContigNode, std::__1::allocator<ContigNode> >, std::__1::allocator<std::__1::vector<ContigNode, std::__1::allocator<ContigNode> > > > const&, std::__1::basic_ofstream<char, std::__1::char_traits<char> >&) in PathConsensus-PathConsensus.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[2]: *** [PathConsensus] Error 1
+make[1]: *** [all-recursive] Error 1
+make: *** [all] Error 2

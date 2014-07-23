@@ -64,6 +64,7 @@ class CommLayer
                 long long unsigned* count);
 #endif
                 
+                
 		// Send a control message
 		void sendControlMessage(APControl m, int argument = 0);
 
@@ -101,6 +102,7 @@ class CommLayer
 		uint64_t m_txPackets;
 		uint64_t m_txMessages;
 		uint64_t m_txBytes;
+
 };
 
 #endif
