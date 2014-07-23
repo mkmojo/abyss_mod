@@ -62,6 +62,36 @@ class CommLayer
                 // Block until master gather all counts
                 long long unsigned* gather(long long unsigned* rev_buffer, 
                 long long unsigned* count);
+                
+                uint64_t getNumSendPackets()
+                {
+                    return m_txPackets;
+                }
+                
+                uint64_t getNumSendMessages()
+                {
+                    return m_txMessages;
+                }
+                
+                uint64_t getNumSendBytes()
+                {
+                    return m_txBytes;
+                }
+                
+                uint64_t getRecvPackets()
+                {
+                    return m_rxPackets;
+                }
+                
+                uint64_t getNumRecvMessages()
+                {
+                    return m_txMessages;
+                }
+                
+                uint64_t getNumRecvBytes()
+                {
+                    return m_txBytes;
+                }
 #endif
                 
                 
