@@ -11,6 +11,7 @@
 #include <ostream>
 #include <set>
 #include <utility>
+#include <iostream>
 
 enum NetworkAssemblyState
 {
@@ -88,7 +89,7 @@ class NetworkSequenceCollection : public ISequenceCollection
 #ifndef DEBUG_QQY_ENABLE
                 //output counter info stored in CommLayer 
                 void outputCounter(long long unsigned *array, 
-                                long long unsigned number, string phase_name);
+                                long long unsigned number, std::string phase_name);
 #endif
                 
 		void completeOperation();

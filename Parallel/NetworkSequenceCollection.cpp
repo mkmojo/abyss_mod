@@ -656,7 +656,7 @@ void NetworkSequenceCollection::SetState(
  * @return nothing
  */
 void NetworkSequenceCollection::outputCounter(long long unsigned *array, 
-        long long unsigned number, string phase_name)
+        long long unsigned number, std::string phase_name)
 {
     m_comm.gather(array, number);
     cout<<"!!!-------counter--------"<<endl;
