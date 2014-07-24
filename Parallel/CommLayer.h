@@ -61,7 +61,7 @@ class CommLayer
 #ifndef DEBUG_QQY_ENABLE
                 // Block until master gather all counts
                 long long unsigned* gather(long long unsigned* rev_buffer, 
-                long long unsigned* count);
+                long long unsigned count);
                 
                 uint64_t getNumSendPackets()
                 {
