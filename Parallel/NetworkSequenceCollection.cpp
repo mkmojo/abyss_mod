@@ -151,6 +151,18 @@ void NetworkSequenceCollection::run()
 				EndState();
 				SetState(NAS_ERODE_WAITING);
 				m_comm.sendCheckPointMessage(numEroded);
+
+				break;
+			}
+			case NAS_ERODE_WAITING:
+				pumpNetwork();
+				break;
+			case NAS_ERODE_COMPLETE:
+				completeOperation();
+				m_comm.reduce(AssemblyAlgorithms::getNumEroded());
+
+				m_comm.reduce(m_data.cleanup());
+				m_comm.barrier();
 #ifndef DEBUG_QQY_ENABLE
                                 numSendPackets = m_comm.getNumSendPackets();
                                 numSendMessages = m_comm.getNumSendMessages();
@@ -166,17 +178,6 @@ void NetworkSequenceCollection::run()
                                 m_comm.gather(NULL, numRecvMessages);
                                 m_comm.gather(NULL, numRecvBytes);                                
 #endif
-				break;
-			}
-			case NAS_ERODE_WAITING:
-				pumpNetwork();
-				break;
-			case NAS_ERODE_COMPLETE:
-				completeOperation();
-				m_comm.reduce(AssemblyAlgorithms::getNumEroded());
-
-				m_comm.reduce(m_data.cleanup());
-				m_comm.barrier();
 				SetState(NAS_WAITING);
 				break;
 			case NAS_TRIM:
