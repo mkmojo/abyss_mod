@@ -31,4 +31,19 @@ class RTimer
 
 /**********End Rahul Nihalani *************/
 
+/************* Qiyuan Qiu *************/
+
+class QTimer
+{
+        public:
+               	QTimer(std::string funcString);
+                ~QTimer();
+        private:
+                std::string m_funcStr;
+                clock_t m_start;
+};
+
+/**********End Qiyuan Qiu *************/
+
+
 #endif
