@@ -583,7 +583,10 @@ static void erosionObserver(ISequenceCollection* c,
 //
 size_t erodeEnds(ISequenceCollection* seqCollection)
 {
-	RTimer erodeEndsTimer(std::to_string(opt::rank)+" QQ: Erode");
+        std::string rank;
+        rank = std::to_string(opt::rank);
+        std::cout<< "rank is : "<<rank;
+        RTimer erodeEndsTimer("QQ:" + rank + "Erode");
 	assert(g_numEroded == 0);
 	seqCollection->attach(erosionObserver);
 
