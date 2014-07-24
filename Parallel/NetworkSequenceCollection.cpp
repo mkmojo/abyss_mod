@@ -188,6 +188,21 @@ void NetworkSequenceCollection::run()
 				EndState();
 				SetState(NAS_WAITING);
 				m_comm.sendCheckPointMessage(numRemoved);
+#ifndef DEBUG_QQY_ENABLE
+                                numSendPackets = m_comm.getNumSendPackets();
+                                numSendMessages = m_comm.getNumSendMessages();
+                                numSendBytes = m_comm.getNumSendBytes();
+                                numRecvPackets = m_comm.getNumRecvPackets();
+                                numRecvMessages = m_comm.getNumRecvMessages();
+                                numRecvBytes = m_comm.getNumRecvBytes();
+                                
+                                m_comm.gather(NULL, numSendPackets);
+                                m_comm.gather(NULL, numSendMessages);
+                                m_comm.gather(NULL, numSendBytes);
+                                m_comm.gather(NULL, numRecvPackets);
+                                m_comm.gather(NULL, numRecvMessages);
+                                m_comm.gather(NULL, numRecvBytes);                                
+#endif                                
 				break;
 			}
 			case NAS_REMOVE_MARKED: {
@@ -620,6 +635,21 @@ void NetworkSequenceCollection::runControl()
 			{
 				RTimer *rtimer = new RTimer("NAS_TRIM");
 				controlTrim();
+#ifndef DEBUG_QQY_ENABLE
+                                numSendPackets = m_comm.getNumSendPackets();
+                                numSendMessages = m_comm.getNumSendMessages();
+                                numSendBytes = m_comm.getNumSendBytes();
+                                numRecvPackets = m_comm.getNumRecvPackets();
+                                numRecvMessages = m_comm.getNumRecvMessages();
+                                numRecvBytes = m_comm.getNumRecvBytes();
+                                
+                                outputCounter(qqy_m_numSendPackets_array, numSendPackets, "NAS_TRIM");
+                                outputCounter(qqy_m_numSendMessages_array, numSendMessages, "NAS_TRIM");
+                                outputCounter(qqy_m_numSendBytes_array, numSendBytes, "NAS_TRIM");
+                                outputCounter(qqy_m_numRecvPackets_array, numRecvPackets, "NAS_TRIM");
+                                outputCounter(qqy_m_numRecvMessages_array, numRecvMessages, "NAS_TRIM");
+                                outputCounter(qqy_m_numRecvBytes_array, numRecvBytes, "NAS_TRIM");
+#endif                                
 				SetState(opt::coverage > 0 ? NAS_COVERAGE
 						: opt::bubbleLen > 0 ? NAS_POPBUBBLE
 						: NAS_MARK_AMBIGUOUS);
