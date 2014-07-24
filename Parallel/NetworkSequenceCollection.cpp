@@ -83,8 +83,8 @@ void NetworkSequenceCollection::run()
 				m_data.shrink();
 				m_comm.reduce(m_data.size());
 #ifndef DEBUG_QQY_ENABLE
-                                m_MPI_count = 0;
-                                m_comm.gather(qqy_m_numMPIcalls_array, &m_MPI_count);
+                                uint64_t numSendPackets = m_comm.getNumSendPackets();
+                                m_comm.gather(qqy_m_numMPIcalls_array, numSendPackets);
 #endif
 				Histogram myh
 					= AssemblyAlgorithms::coverageHistogram(m_data);
@@ -446,8 +446,8 @@ void NetworkSequenceCollection::runControl()
 				m_data.shrink();
 				size_t numLoaded = m_comm.reduce(m_data.size());
 #ifndef DEBUG_QQY_ENABLE
-                                uint64_t num_MPI_Packets = m_comm.getNumSendPackets();
-                                m_comm.gather(qqy_m_numMPIcalls_array, num_MPI_Packets);
+                                size_t numSendPackets = m_comm.getNumSendPackets();
+                                m_comm.gather(qqy_m_numMPIcalls_array, numSendPackets);
                                 for(int i=0; i<opt::numProc; i++)
                                 {
                                     std::cout << i<< ": " << qqy_m_numMPIcalls_array[i] << " calls."<<std::endl;

@@ -156,6 +156,8 @@
       </toolsSet>
       <flagsDictionary>
         <element flagsID="0" commonFlags="-O2"/>
+        <element flagsID="1" commonFlags="-fopenmp -O2"/>
+        <element flagsID="2" commonFlags="-g -O2"/>
       </flagsDictionary>
       <codeAssistance>
       </codeAssistance>
@@ -169,7 +171,7 @@
             <incDir>
               <pElem>dialign</pElem>
               <pElem>.</pElem>
-              <pElem>../../../Dropbox/Projects/LargeGraph/Abyss/openmpi-1.8.1/include</pElem>
+              <pElem>../../openmpi-1.6.5/include</pElem>
             </incDir>
             <preprocessorList>
               <Elem>HAVE_CONFIG_H</Elem>
@@ -183,137 +185,219 @@
         </makeTool>
       </makefileType>
       <item path="ABYSS/Abyss.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="AdjList/AdjList.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="Align/align.cc" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
+        <ccTool flags="1">
           <incDir>
             <pElem>DataLayer</pElem>
-            <pElem>../../../Dropbox/Projects/LargeGraph/Abyss/openmpi-1.8.1/include</pElem>
+            <pElem>../../openmpi-1.6.5/include</pElem>
           </incDir>
         </ccTool>
       </item>
       <item path="Align/alignGlobal.cc" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">
           <incDir>
-            <pElem>../../../Dropbox/Projects/LargeGraph/Abyss/openmpi-1.8.1/include</pElem>
+            <pElem>../../openmpi-1.6.5/include</pElem>
           </incDir>
         </ccTool>
       </item>
       <item path="Align/dialign.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">
           <incDir>
-            <pElem>../../../Dropbox/Projects/LargeGraph/Abyss/openmpi-1.8.1/include</pElem>
+            <pElem>../../openmpi-1.6.5/include</pElem>
           </incDir>
         </ccTool>
       </item>
       <item path="Align/dna_diag_prob.cc" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">
           <incDir>
-            <pElem>../../../Dropbox/Projects/LargeGraph/Abyss/openmpi-1.8.1/include</pElem>
+            <pElem>../../openmpi-1.6.5/include</pElem>
           </incDir>
         </ccTool>
       </item>
       <item path="Align/mergepairs.cc" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
+        <ccTool flags="1">
           <incDir>
             <pElem>DataLayer</pElem>
-            <pElem>../../../Dropbox/Projects/LargeGraph/Abyss/openmpi-1.8.1/include</pElem>
+            <pElem>../../openmpi-1.6.5/include</pElem>
           </incDir>
         </ccTool>
       </item>
       <item path="Align/smith_waterman.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">
           <incDir>
-            <pElem>../../../Dropbox/Projects/LargeGraph/Abyss/openmpi-1.8.1/include</pElem>
+            <pElem>../../openmpi-1.6.5/include</pElem>
           </incDir>
         </ccTool>
       </item>
       <item path="Assembly/AssemblyAlgorithms.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="Assembly/BranchGroup.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="Assembly/BranchRecord.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="Assembly/DotWriter.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="Assembly/Options.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="Assembly/SequenceCollection.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="Common/ContigID.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="Common/Fcontrol.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="Common/Histogram.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="Common/Kmer.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="Common/Log.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="Common/Options.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="Common/SeqExt.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="Common/Sequence.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="Common/SignalHandler.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="Common/Timer.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="Common/Uncompress.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="Common/city.cc" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="Consensus/Consensus.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="DAssembler/DAssembler.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="DAssembler/RotatedRead.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="DataLayer/FastaReader.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="DataLayer/FastaWriter.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="DataLayer/abyss-tofastq.cc" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="DataLayer/fac.cc" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="DistanceEst/DistanceEst.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="1">
+        </ccTool>
       </item>
       <item path="DistanceEst/MLE.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="1">
+        </ccTool>
       </item>
       <item path="FMIndex/abyss-dawg.cc" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="FMIndex/bit_array.cc" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="FMIndex/count.cc" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="FilterGraph/FilterGraph.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="1">
+        </ccTool>
       </item>
       <item path="GapFiller/gapfill.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="1">
+        </ccTool>
       </item>
       <item path="Graph/gc.cc" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="Graph/todot.cc" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="KAligner/Aligner.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="KAligner/KAligner.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="Layout/layout.cc" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="Map/index.cc" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="Map/map.cc" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
+        <ccTool flags="1">
           <preprocessorList>
             <Elem>SAM_SEQ_QUAL=1</Elem>
           </preprocessorList>
         </ccTool>
       </item>
       <item path="Map/overlap.cc" ex="false" tool="1" flavor2="0">
+        <ccTool flags="1">
+        </ccTool>
       </item>
       <item path="MergePaths/MergeContigs.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">
@@ -321,16 +405,16 @@
             <pElem>Align</pElem>
             <pElem>Common</pElem>
             <pElem>DataLayer</pElem>
-            <pElem>../../../Dropbox/Projects/LargeGraph/Abyss/openmpi-1.8.1/include</pElem>
+            <pElem>../../openmpi-1.6.5/include</pElem>
           </incDir>
         </ccTool>
       </item>
       <item path="MergePaths/MergePaths.cpp" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
+        <ccTool flags="1">
           <incDir>
             <pElem>Common</pElem>
             <pElem>DataLayer</pElem>
-            <pElem>../../../Dropbox/Projects/LargeGraph/Abyss/openmpi-1.8.1/include</pElem>
+            <pElem>../../openmpi-1.6.5/include</pElem>
           </incDir>
         </ccTool>
       </item>
@@ -341,26 +425,40 @@
             <pElem>Common</pElem>
             <pElem>DataLayer</pElem>
             <pElem>SimpleGraph</pElem>
-            <pElem>../../../Dropbox/Projects/LargeGraph/Abyss/openmpi-1.8.1/include</pElem>
+            <pElem>../../openmpi-1.6.5/include</pElem>
           </incDir>
         </ccTool>
       </item>
       <item path="Overlap/Overlap.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
-      <item path="Parallel/CommLayer.cpp" ex="false" tool="1" flavor2="0">
+      <item path="Parallel/CommLayer.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
       </item>
-      <item path="Parallel/MessageBuffer.cpp" ex="false" tool="1" flavor2="0">
+      <item path="Parallel/MessageBuffer.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
       </item>
-      <item path="Parallel/Messages.cpp" ex="false" tool="1" flavor2="0">
+      <item path="Parallel/Messages.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="Parallel/NetworkSequenceCollection.cpp"
             ex="false"
             tool="1"
-            flavor2="0">
+            flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
       </item>
-      <item path="Parallel/parallelAbyss.cpp" ex="false" tool="1" flavor2="0">
+      <item path="Parallel/parallelAbyss.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="ParseAligns/ParseAligns.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="ParseAligns/abyss-fixmate.cc" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">
@@ -370,38 +468,72 @@
         </ccTool>
       </item>
       <item path="PathOverlap/PathOverlap.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="PopBubbles/PopBubbles.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="1">
+        </ccTool>
       </item>
       <item path="Scaffold/drawgraph.cc" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="Scaffold/junction.cc" ex="false" tool="1" flavor2="0">
+        <ccTool flags="1">
+        </ccTool>
       </item>
       <item path="Scaffold/longseqdist.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="1">
+        </ccTool>
       </item>
       <item path="Scaffold/scaffold.cc" ex="false" tool="1" flavor2="0">
+        <ccTool flags="1">
+        </ccTool>
       </item>
       <item path="SimpleGraph/SimpleGraph.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
       <item path="connectpairs/connectpairs.cc" ex="false" tool="1" flavor2="0">
+        <ccTool flags="1">
+        </ccTool>
       </item>
       <item path="dialign/alig.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="2">
+        </cTool>
       </item>
       <item path="dialign/assemble.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="2">
+        </cTool>
       </item>
       <item path="dialign/diag.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="2">
+        </cTool>
       </item>
       <item path="dialign/io.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="2">
+        </cTool>
       </item>
       <item path="dialign/museq.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="2">
+        </cTool>
       </item>
       <item path="dialign/orf.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="2">
+        </cTool>
       </item>
       <item path="dialign/parameters.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="2">
+        </cTool>
       </item>
       <item path="dialign/prob.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="2">
+        </cTool>
       </item>
       <item path="dialign/translate.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="2">
+        </cTool>
       </item>
       <folder path="0/ABYSS">
         <ccTool>
@@ -411,7 +543,7 @@
             <pElem>Assembly</pElem>
             <pElem>Common</pElem>
             <pElem>DataLayer</pElem>
-            <pElem>../../../Dropbox/Projects/LargeGraph/Abyss/openmpi-1.8.1/include</pElem>
+            <pElem>../../openmpi-1.6.5/include</pElem>
           </incDir>
         </ccTool>
       </folder>
@@ -422,7 +554,7 @@
             <pElem>.</pElem>
             <pElem>Common</pElem>
             <pElem>DataLayer</pElem>
-            <pElem>../../../Dropbox/Projects/LargeGraph/Abyss/openmpi-1.8.1/include</pElem>
+            <pElem>../../openmpi-1.6.5/include</pElem>
           </incDir>
         </ccTool>
       </folder>
@@ -442,7 +574,7 @@
             <pElem>.</pElem>
             <pElem>Common</pElem>
             <pElem>DataLayer</pElem>
-            <pElem>../../../Dropbox/Projects/LargeGraph/Abyss/openmpi-1.8.1/include</pElem>
+            <pElem>../../openmpi-1.6.5/include</pElem>
           </incDir>
         </ccTool>
       </folder>
@@ -451,7 +583,7 @@
           <incDir>
             <pElem>Common</pElem>
             <pElem>.</pElem>
-            <pElem>../../../Dropbox/Projects/LargeGraph/Abyss/openmpi-1.8.1/include</pElem>
+            <pElem>../../openmpi-1.6.5/include</pElem>
           </incDir>
         </ccTool>
       </folder>
@@ -462,7 +594,7 @@
             <pElem>.</pElem>
             <pElem>Common</pElem>
             <pElem>DataLayer</pElem>
-            <pElem>../../../Dropbox/Projects/LargeGraph/Abyss/openmpi-1.8.1/include</pElem>
+            <pElem>../../openmpi-1.6.5/include</pElem>
           </incDir>
         </ccTool>
       </folder>
@@ -473,7 +605,7 @@
             <pElem>.</pElem>
             <pElem>Common</pElem>
             <pElem>DataLayer</pElem>
-            <pElem>../../../Dropbox/Projects/LargeGraph/Abyss/openmpi-1.8.1/include</pElem>
+            <pElem>../../openmpi-1.6.5/include</pElem>
           </incDir>
         </ccTool>
       </folder>
@@ -483,7 +615,7 @@
             <pElem>DataLayer</pElem>
             <pElem>.</pElem>
             <pElem>Common</pElem>
-            <pElem>../../../Dropbox/Projects/LargeGraph/Abyss/openmpi-1.8.1/include</pElem>
+            <pElem>../../openmpi-1.6.5/include</pElem>
           </incDir>
         </ccTool>
       </folder>
@@ -493,7 +625,7 @@
             <pElem>DistanceEst</pElem>
             <pElem>.</pElem>
             <pElem>Common</pElem>
-            <pElem>../../../Dropbox/Projects/LargeGraph/Abyss/openmpi-1.8.1/include</pElem>
+            <pElem>../../openmpi-1.6.5/include</pElem>
           </incDir>
           <preprocessorList>
             <Elem>SAM_SEQ_QUAL=1</Elem>
@@ -506,7 +638,7 @@
             <pElem>FMIndex</pElem>
             <pElem>.</pElem>
             <pElem>Common</pElem>
-            <pElem>../../../Dropbox/Projects/LargeGraph/Abyss/openmpi-1.8.1/include</pElem>
+            <pElem>../../openmpi-1.6.5/include</pElem>
           </incDir>
         </ccTool>
       </folder>
@@ -517,7 +649,7 @@
             <pElem>.</pElem>
             <pElem>Common</pElem>
             <pElem>DataLayer</pElem>
-            <pElem>../../../Dropbox/Projects/LargeGraph/Abyss/openmpi-1.8.1/include</pElem>
+            <pElem>../../openmpi-1.6.5/include</pElem>
           </incDir>
         </ccTool>
       </folder>
@@ -529,7 +661,7 @@
             <pElem>Common</pElem>
             <pElem>DataLayer</pElem>
             <pElem>Align</pElem>
-            <pElem>../../../Dropbox/Projects/LargeGraph/Abyss/openmpi-1.8.1/include</pElem>
+            <pElem>../../openmpi-1.6.5/include</pElem>
           </incDir>
           <preprocessorList>
             <Elem>SAM_SEQ_QUAL=1</Elem>
@@ -542,7 +674,7 @@
             <pElem>Graph</pElem>
             <pElem>.</pElem>
             <pElem>Common</pElem>
-            <pElem>../../../Dropbox/Projects/LargeGraph/Abyss/openmpi-1.8.1/include</pElem>
+            <pElem>../../openmpi-1.6.5/include</pElem>
           </incDir>
         </ccTool>
       </folder>
@@ -553,7 +685,7 @@
             <pElem>.</pElem>
             <pElem>Common</pElem>
             <pElem>DataLayer</pElem>
-            <pElem>../../../Dropbox/Projects/LargeGraph/Abyss/openmpi-1.8.1/include</pElem>
+            <pElem>../../openmpi-1.6.5/include</pElem>
           </incDir>
         </ccTool>
       </folder>
@@ -563,7 +695,7 @@
             <pElem>Layout</pElem>
             <pElem>.</pElem>
             <pElem>Common</pElem>
-            <pElem>../../../Dropbox/Projects/LargeGraph/Abyss/openmpi-1.8.1/include</pElem>
+            <pElem>../../openmpi-1.6.5/include</pElem>
           </incDir>
         </ccTool>
       </folder>
@@ -575,7 +707,7 @@
             <pElem>Common</pElem>
             <pElem>DataLayer</pElem>
             <pElem>FMIndex</pElem>
-            <pElem>../../../Dropbox/Projects/LargeGraph/Abyss/openmpi-1.8.1/include</pElem>
+            <pElem>../../openmpi-1.6.5/include</pElem>
           </incDir>
         </ccTool>
       </folder>
@@ -594,7 +726,7 @@
             <pElem>.</pElem>
             <pElem>Common</pElem>
             <pElem>DataLayer</pElem>
-            <pElem>../../../Dropbox/Projects/LargeGraph/Abyss/openmpi-1.8.1/include</pElem>
+            <pElem>../../openmpi-1.6.5/include</pElem>
           </incDir>
         </ccTool>
       </folder>
@@ -606,7 +738,7 @@
             <pElem>Assembly</pElem>
             <pElem>Common</pElem>
             <pElem>DataLayer</pElem>
-            <pElem>../../../Dropbox/Projects/LargeGraph/Abyss/openmpi-1.8.1/include</pElem>
+            <pElem>../../openmpi-1.6.5/include</pElem>
           </incDir>
         </ccTool>
       </folder>
@@ -616,7 +748,7 @@
             <pElem>ParseAligns</pElem>
             <pElem>.</pElem>
             <pElem>Common</pElem>
-            <pElem>../../../Dropbox/Projects/LargeGraph/Abyss/openmpi-1.8.1/include</pElem>
+            <pElem>../../openmpi-1.6.5/include</pElem>
           </incDir>
         </ccTool>
       </folder>
@@ -627,7 +759,7 @@
             <pElem>.</pElem>
             <pElem>Common</pElem>
             <pElem>DataLayer</pElem>
-            <pElem>../../../Dropbox/Projects/LargeGraph/Abyss/openmpi-1.8.1/include</pElem>
+            <pElem>../../openmpi-1.6.5/include</pElem>
           </incDir>
         </ccTool>
       </folder>
@@ -639,7 +771,7 @@
             <pElem>Align</pElem>
             <pElem>Common</pElem>
             <pElem>DataLayer</pElem>
-            <pElem>../../../Dropbox/Projects/LargeGraph/Abyss/openmpi-1.8.1/include</pElem>
+            <pElem>../../openmpi-1.6.5/include</pElem>
           </incDir>
         </ccTool>
       </folder>
@@ -649,7 +781,7 @@
             <pElem>Scaffold</pElem>
             <pElem>.</pElem>
             <pElem>Common</pElem>
-            <pElem>../../../Dropbox/Projects/LargeGraph/Abyss/openmpi-1.8.1/include</pElem>
+            <pElem>../../openmpi-1.6.5/include</pElem>
           </incDir>
         </ccTool>
       </folder>
@@ -659,7 +791,7 @@
             <pElem>SimpleGraph</pElem>
             <pElem>.</pElem>
             <pElem>Common</pElem>
-            <pElem>../../../Dropbox/Projects/LargeGraph/Abyss/openmpi-1.8.1/include</pElem>
+            <pElem>../../openmpi-1.6.5/include</pElem>
           </incDir>
         </ccTool>
       </folder>
@@ -670,7 +802,7 @@
             <pElem>.</pElem>
             <pElem>Common</pElem>
             <pElem>DataLayer</pElem>
-            <pElem>../../../Dropbox/Projects/LargeGraph/Abyss/openmpi-1.8.1/include</pElem>
+            <pElem>../../openmpi-1.6.5/include</pElem>
           </incDir>
         </ccTool>
       </folder>
@@ -682,11 +814,13 @@
             <pElem>Assembly</pElem>
             <pElem>Common</pElem>
             <pElem>DataLayer</pElem>
-            <pElem>../../../Dropbox/Projects/LargeGraph/Abyss/openmpi-1.8.1/include</pElem>
+            <pElem>../../openmpi-1.6.5/include</pElem>
           </incDir>
         </ccTool>
       </folder>
       <item path="kmerprint/kmerprint.cc" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
       </item>
     </conf>
   </confs>

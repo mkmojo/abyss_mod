@@ -36,6 +36,8 @@
         <in>SequenceCollection.cpp</in>
         <in>SequenceCollection.h</in>
       </df>
+      <df name="autom4te.cache">
+      </df>
       <df name="bin">
       </df>
       <df name="Common">
@@ -273,7 +275,7 @@
     <conf name="Default" type="0">
       <toolsSet>
         <developmentServer>localhost</developmentServer>
-        <platform>4</platform>
+        <platform>2</platform>
       </toolsSet>
       <compile>
         <compiledirpicklist>
