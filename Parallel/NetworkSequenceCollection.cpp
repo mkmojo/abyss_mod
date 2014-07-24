@@ -83,9 +83,10 @@ void NetworkSequenceCollection::run()
 				m_data.shrink();
 				m_comm.reduce(m_data.size());
 #ifndef DEBUG_QQY_ENABLE
-                                size_t numSendMessages = m_comm.getNumSendMessages();
-                                size_t numSendBytes = m_comm.getNumSendBytes();
-                                size_t numSendPackets = m_comm.getNumSendPackets();
+                                size_t numSendMessages = 0;
+                                numSendMessages = m_comm.getNumSendMessages();
+                                size_t numSendBytes = 0;
+                                numSendBytes = m_comm.getNumSendBytes();
                                 size_t numSendPackets = m_comm.getNumSendPackets();
                                 m_comm.gather(qqy_m_numMPIcalls_array, numSendPackets);
 #endif
@@ -449,8 +450,10 @@ void NetworkSequenceCollection::runControl()
 				m_data.shrink();
 				size_t numLoaded = m_comm.reduce(m_data.size());
 #ifndef DEBUG_QQY_ENABLE
-                                size_t numSendMessages = m_comm.getNumSendMessages();
-                                size_t numSendBytes = m_comm.getNumSendBytes();
+                                size_t numSendMessages = 0;
+                                numSendMessages = m_comm.getNumSendMessages();
+                                size_t numSendBytes = 0;
+                                numSendBytes = m_comm.getNumSendBytes();
                                 size_t numSendPackets = m_comm.getNumSendPackets();
                                 m_comm.gather(qqy_m_numMPIcalls_array, numSendPackets);
                                 //print result out
