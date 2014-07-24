@@ -60,6 +60,12 @@ void NetworkSequenceCollection::run()
 	pair<size_t, size_t> numAssembled;
 
 	ofstream bubbleFile;
+        size_t numSendPackets = 0;
+        size_t numSendMessages = 0;
+        size_t numSendBytes = 0;
+        size_t numRecvPackets = 0;
+        size_t numRecvMessages = 0;
+        size_t numRecvBytes = 0;
 
 	SetState(NAS_LOADING);
 	while (m_state != NAS_DONE) {
@@ -83,12 +89,12 @@ void NetworkSequenceCollection::run()
 				m_data.shrink();
 				m_comm.reduce(m_data.size());
 #ifndef DEBUG_QQY_ENABLE
-                                size_t numSendPackets = m_comm.getNumSendPackets();
-                                size_t numSendMessages = m_comm.getNumSendMessages();
-                                size_t numSendBytes = m_comm.getNumSendBytes();
-                                size_t numRecvPackets = m_comm.getNumRecvPackets();
-                                size_t numRecvMessages = m_comm.getNumRecvMessages();
-                                size_t numRecvBytes = m_comm.getNumRecvBytes();
+                                numSendPackets = m_comm.getNumSendPackets();
+                                numSendMessages = m_comm.getNumSendMessages();
+                                numSendBytes = m_comm.getNumSendBytes();
+                                numRecvPackets = m_comm.getNumRecvPackets();
+                                numRecvMessages = m_comm.getNumRecvMessages();
+                                numRecvBytes = m_comm.getNumRecvBytes();
                                 
                                 m_comm.gather(NULL, numSendPackets);
                                 m_comm.gather(NULL, numSendMessages);
@@ -120,12 +126,12 @@ void NetworkSequenceCollection::run()
 					<< " edges.\n";
 				m_comm.reduce(m_numBasesAdjSet);
 #ifndef DEBUG_QQY_ENABLE
-                                size_t numSendPackets = m_comm.getNumSendPackets();
-                                size_t numSendMessages = m_comm.getNumSendMessages();
-                                size_t numSendBytes = m_comm.getNumSendBytes();
-                                size_t numRecvPackets = m_comm.getNumRecvPackets();
-                                size_t numRecvMessages = m_comm.getNumRecvMessages();
-                                size_t numRecvBytes = m_comm.getNumRecvBytes();
+                                numSendPackets = m_comm.getNumSendPackets();
+                                numSendMessages = m_comm.getNumSendMessages();
+                                numSendBytes = m_comm.getNumSendBytes();
+                                numRecvPackets = m_comm.getNumRecvPackets();
+                                numRecvMessages = m_comm.getNumRecvMessages();
+                                numRecvBytes = m_comm.getNumRecvBytes();
                                 
                                 m_comm.gather(NULL, numSendPackets);
                                 m_comm.gather(NULL, numSendMessages);
@@ -447,6 +453,13 @@ void NetworkSequenceCollection::controlCoverage()
 /** Run the assembly state machine for the controller (rank = 0). */
 void NetworkSequenceCollection::runControl()
 {
+        size_t numSendPackets = 0;
+        size_t numSendMessages = 0;
+        size_t numSendBytes = 0;
+        size_t numRecvPackets = 0;
+        size_t numRecvMessages = 0;
+        size_t numRecvBytes = 0;
+        
 	SetState(NAS_LOADING);
 	while (m_state != NAS_DONE) {
 		switch (m_state) {
@@ -472,12 +485,12 @@ void NetworkSequenceCollection::runControl()
 				m_data.shrink();
 				size_t numLoaded = m_comm.reduce(m_data.size());
 #ifndef DEBUG_QQY_ENABLE
-                                size_t numSendPackets = m_comm.getNumSendPackets();
-                                size_t numSendMessages = m_comm.getNumSendMessages();
-                                size_t numSendBytes = m_comm.getNumSendBytes();
-                                size_t numRecvPackets = m_comm.getNumRecvPackets();
-                                size_t numRecvMessages = m_comm.getNumRecvMessages();
-                                size_t numRecvBytes = m_comm.getNumRecvBytes();
+                                numSendPackets = m_comm.getNumSendPackets();
+                                numSendMessages = m_comm.getNumSendMessages();
+                                numSendBytes = m_comm.getNumSendBytes();
+                                numRecvPackets = m_comm.getNumRecvPackets();
+                                numRecvMessages = m_comm.getNumRecvMessages();
+                                numRecvBytes = m_comm.getNumRecvBytes();
                                 
                                 outputCounter(qqy_m_numSendPackets_array, numSendPackets, "NAS_LOADING");
                                 outputCounter(qqy_m_numSendMessages_array, numSendMessages, "NAS_LOADING");
@@ -522,12 +535,12 @@ void NetworkSequenceCollection::runControl()
 				m_comm.barrier();
 				pumpNetwork();
 #ifndef DEBUG_QQY_ENABLE
-                                size_t numSendPackets = m_comm.getNumSendPackets();
-                                size_t numSendMessages = m_comm.getNumSendMessages();
-                                size_t numSendBytes = m_comm.getNumSendBytes();
-                                size_t numRecvPackets = m_comm.getNumRecvPackets();
-                                size_t numRecvMessages = m_comm.getNumRecvMessages();
-                                size_t numRecvBytes = m_comm.getNumRecvBytes();
+                                numSendPackets = m_comm.getNumSendPackets();
+                                numSendMessages = m_comm.getNumSendMessages();
+                                numSendBytes = m_comm.getNumSendBytes();
+                                numRecvPackets = m_comm.getNumRecvPackets();
+                                numRecvMessages = m_comm.getNumRecvMessages();
+                                numRecvBytes = m_comm.getNumRecvBytes();
                                 
                                 outputCounter(qqy_m_numSendPackets_array, numSendPackets, "NAS_GEN_ADJ");
                                 outputCounter(qqy_m_numSendMessages_array, numSendMessages, "NAS_GEN_ADJ");
