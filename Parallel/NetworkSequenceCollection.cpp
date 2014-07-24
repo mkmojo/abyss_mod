@@ -662,9 +662,8 @@ void NetworkSequenceCollection::outputCounter(long long unsigned *array,
     cout<<"!!!-------counter--------"<<endl;
     for(int i=0; i<opt::numProc; i++)
     {
-        cout<< phase_name <<": !!!"<< i<< ": " << array[i] << endl;
+        cout<<"!!! "<<phase_name<<" "<< i<<": "<<array[i]<<endl;
     }
-    cout<<"!!!----------------------"<<endl;
 }
 #endif
 
