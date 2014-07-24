@@ -83,7 +83,10 @@ void NetworkSequenceCollection::run()
 				m_data.shrink();
 				m_comm.reduce(m_data.size());
 #ifndef DEBUG_QQY_ENABLE
-                                uint64_t numSendPackets = m_comm.getNumSendPackets();
+                                size_t numSendMessages = m_comm.getNumSendMessages();
+                                size_t numSendBytes = m_comm.getNumSendBytes();
+                                size_t numSendPackets = m_comm.getNumSendPackets();
+                                size_t numSendPackets = m_comm.getNumSendPackets();
                                 m_comm.gather(qqy_m_numMPIcalls_array, numSendPackets);
 #endif
 				Histogram myh
@@ -446,13 +449,16 @@ void NetworkSequenceCollection::runControl()
 				m_data.shrink();
 				size_t numLoaded = m_comm.reduce(m_data.size());
 #ifndef DEBUG_QQY_ENABLE
+                                size_t numSendMessages = m_comm.getNumSendMessages();
+                                size_t numSendBytes = m_comm.getNumSendBytes();
                                 size_t numSendPackets = m_comm.getNumSendPackets();
                                 m_comm.gather(qqy_m_numMPIcalls_array, numSendPackets);
-                                //print resultout
+                                //print result out
                                 for(int i=0; i<opt::numProc; i++)
                                 {
-                                    std::cout <<"!!!"<< i<< ": " << qqy_m_numMPIcalls_array[i] 
-                                            << " calls."<<std::endl;
+                                    std::cout<< opt::rank <<" !!!"<< i<< ": " << 
+                                            qqy_m_numMPIcalls_array[i] << 
+                                            " calls."<<std::endl;
                                 }
 #endif                           
 				cout << "Loaded " << numLoaded << " k-mer. "
