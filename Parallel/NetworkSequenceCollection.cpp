@@ -83,6 +83,7 @@ void NetworkSequenceCollection::run()
 				m_data.shrink();
 				m_comm.reduce(m_data.size());
 #ifndef DEBUG_QQY_ENABLE
+
                                 size_t numSendPackets = m_comm.getNumSendPackets();
                                 size_t numSendMessages = m_comm.getNumSendMessages();
                                 size_t numSendBytes = m_comm.getNumSendBytes();
@@ -90,12 +91,13 @@ void NetworkSequenceCollection::run()
                                 size_t numRecvMessages = m_comm.getNumRecvMessages();
                                 size_t numRecvBytes = m_comm.getNumRecvBytes();
                                 
-                                outputCounter(qqy_m_numSendPackets_array, numSendPackets);
-                                outputCounter(qqy_m_numSendMessages_array, numSendMessages);
-                                outputCounter(qqy_m_numSendBytes_array, numSendBytes);
-                                outputCounter(qqy_m_numRecvPackets_array, numRecvPackets);
-                                outputCounter(qqy_m_numRecvMessages_array, numRecvMessages);
-                                outputCounter(qqy_m_numRecvBytes_array, numRecvBytes);
+                                m_comm.gather(qqy_m_numSendPackets_array, numSendPackets);
+                                m_comm.gather(qqy_m_numSendMessages_array, numSendMessages);
+                                m_comm.gather(qqy_m_numSendBytes_array, numSendBytes);
+                                m_comm.gather(qqy_m_numRecvPackets_array, numRecvPackets);
+                                m_comm.gather(qqy_m_numRecvMessages_array, numRecvMessages);
+                                m_comm.gather(qqy_m_numRecvBytes_array, numRecvBytes);                                
+
 #endif
 				Histogram myh
 					= AssemblyAlgorithms::coverageHistogram(m_data);

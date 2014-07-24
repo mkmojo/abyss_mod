@@ -239,6 +239,20 @@
       <df name="PopBubbles">
         <in>PopBubbles.cpp</in>
       </df>
+      <df name="release">
+        <df name="bin">
+        </df>
+        <df name="share">
+          <df name="doc">
+            <df name="abyss">
+            </df>
+          </df>
+          <df name="man">
+            <df name="man1">
+            </df>
+          </df>
+        </df>
+      </df>
       <df name="Scaffold">
         <in>drawgraph.cc</in>
         <in>junction.cc</in>
