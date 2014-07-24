@@ -151,18 +151,6 @@ void NetworkSequenceCollection::run()
 				EndState();
 				SetState(NAS_ERODE_WAITING);
 				m_comm.sendCheckPointMessage(numEroded);
-				break;
-			}
-			case NAS_ERODE_WAITING:
-				pumpNetwork();
-				break;
-			case NAS_ERODE_COMPLETE:
-				completeOperation();
-				m_comm.reduce(AssemblyAlgorithms::getNumEroded());
-
-				m_comm.reduce(m_data.cleanup());
-				m_comm.barrier();
-
 #ifndef DEBUG_QQY_ENABLE
                                 numSendPackets = m_comm.getNumSendPackets();
                                 numSendMessages = m_comm.getNumSendMessages();
@@ -178,6 +166,17 @@ void NetworkSequenceCollection::run()
                                 m_comm.gather(NULL, numRecvMessages);
                                 m_comm.gather(NULL, numRecvBytes);                                
 #endif
+				break;
+			}
+			case NAS_ERODE_WAITING:
+				pumpNetwork();
+				break;
+			case NAS_ERODE_COMPLETE:
+				completeOperation();
+				m_comm.reduce(AssemblyAlgorithms::getNumEroded());
+
+				m_comm.reduce(m_data.cleanup());
+				m_comm.barrier();
 				SetState(NAS_WAITING);
 				break;
 			case NAS_TRIM:
@@ -581,7 +580,6 @@ void NetworkSequenceCollection::runControl()
 				assert(opt::erode > 0);
 				cout << "Eroding tips...\n";
 				controlErode();
-				SetState(NAS_TRIM);
 #ifndef DEBUG_QQY_ENABLE
                                 numSendPackets = m_comm.getNumSendPackets();
                                 numSendMessages = m_comm.getNumSendMessages();
@@ -596,7 +594,8 @@ void NetworkSequenceCollection::runControl()
                                 outputCounter(qqy_m_numRecvPackets_array, numRecvPackets, "NAS_ERODE");
                                 outputCounter(qqy_m_numRecvMessages_array, numRecvMessages, "NAS_ERODE");
                                 outputCounter(qqy_m_numRecvBytes_array, numRecvBytes, "NAS_ERODE");
-#endif   
+#endif                                 
+				SetState(NAS_TRIM);
 				delete rtimer;
 				break;
 			}
