@@ -224,6 +224,7 @@ void NetworkSequenceCollection::run()
 				EndState();
 				SetState(NAS_WAITING);
 				m_comm.sendCheckPointMessage();
+                              
 				break;
 			}
 			case NAS_COVERAGE_COMPLETE:
@@ -235,6 +236,21 @@ void NetworkSequenceCollection::run()
 				m_comm.reduce(m_lowCoverageKmer);
 				opt::coverage = 0;
 				EndState();
+#ifndef DEBUG_QQY_ENABLE
+                                numSendPackets = m_comm.getNumSendPackets();
+                                numSendMessages = m_comm.getNumSendMessages();
+                                numSendBytes = m_comm.getNumSendBytes();
+                                numRecvPackets = m_comm.getNumRecvPackets();
+                                numRecvMessages = m_comm.getNumRecvMessages();
+                                numRecvBytes = m_comm.getNumRecvBytes();
+                                
+                                m_comm.gather(NULL, numSendPackets);
+                                m_comm.gather(NULL, numSendMessages);
+                                m_comm.gather(NULL, numSendBytes);
+                                m_comm.gather(NULL, numRecvPackets);
+                                m_comm.gather(NULL, numRecvMessages);
+                                m_comm.gather(NULL, numRecvBytes);                                
+#endif                                
 				SetState(NAS_WAITING);
 				break;
 
@@ -660,6 +676,21 @@ void NetworkSequenceCollection::runControl()
 			{
 				RTimer *rtimer = new RTimer("NAS_COVERAGE");
 				controlCoverage();
+#ifndef DEBUG_QQY_ENABLE
+                                numSendPackets = m_comm.getNumSendPackets();
+                                numSendMessages = m_comm.getNumSendMessages();
+                                numSendBytes = m_comm.getNumSendBytes();
+                                numRecvPackets = m_comm.getNumRecvPackets();
+                                numRecvMessages = m_comm.getNumRecvMessages();
+                                numRecvBytes = m_comm.getNumRecvBytes();
+                                
+                                outputCounter(qqy_m_numSendPackets_array, numSendPackets, "NAS_COVERAGE");
+                                outputCounter(qqy_m_numSendMessages_array, numSendMessages, "NAS_COVERAGE");
+                                outputCounter(qqy_m_numSendBytes_array, numSendBytes, "NAS_COVERAGE");
+                                outputCounter(qqy_m_numRecvPackets_array, numRecvPackets, "NAS_COVERAGE");
+                                outputCounter(qqy_m_numRecvMessages_array, numRecvMessages, "NAS_COVERAGE");
+                                outputCounter(qqy_m_numRecvBytes_array, numRecvBytes, "NAS_COVERAGE");
+#endif                                 
 				SetState(opt::erode > 0 ? NAS_ERODE : NAS_TRIM);
 				delete rtimer;
 				break;
