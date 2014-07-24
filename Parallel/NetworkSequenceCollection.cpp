@@ -83,12 +83,9 @@ void NetworkSequenceCollection::run()
 				m_data.shrink();
 				m_comm.reduce(m_data.size());
 #ifndef DEBUG_QQY_ENABLE
-                                size_t numSendMessages = 0;
-                                numSendMessages = m_comm.getNumSendMessages();
-                                size_t numSendBytes = 0;
-                                numSendBytes = m_comm.getNumSendBytes();
+
                                 size_t numSendPackets = m_comm.getNumSendPackets();
-                                m_comm.gather(qqy_m_numMPIcalls_array, numSendPackets);
+                                m_comm.gather(qqy_m_numSendPackets_array, numSendPackets);
 #endif
 				Histogram myh
 					= AssemblyAlgorithms::coverageHistogram(m_data);
@@ -450,19 +447,21 @@ void NetworkSequenceCollection::runControl()
 				m_data.shrink();
 				size_t numLoaded = m_comm.reduce(m_data.size());
 #ifndef DEBUG_QQY_ENABLE
-                                size_t numSendMessages = 0;
-                                numSendMessages = m_comm.getNumSendMessages();
-                                size_t numSendBytes = 0;
-                                numSendBytes = m_comm.getNumSendBytes();
                                 size_t numSendPackets = m_comm.getNumSendPackets();
-                                m_comm.gather(qqy_m_numMPIcalls_array, numSendPackets);
-                                //print result out
-                                for(int i=0; i<opt::numProc; i++)
-                                {
-                                    std::cout<< opt::rank <<" !!!"<< i<< ": " << 
-                                            qqy_m_numMPIcalls_array[i] << 
-                                            " calls."<<std::endl;
-                                }
+                                size_t numSendMessages = m_comm.getNumSendMessages();
+                                size_t numSendBytes = m_comm.getNumSendBytes();
+                                size_t numRecvPackets = m_comm.getNumRecvPackets();
+                                size_t numRecvMessages = m_comm.getNumRecvMessages();
+                                size_t numRecvBytes = m_comm.getNumRecvBytes();
+                                
+                                //TODO
+                                //output counter information
+                                outputCounter(qqy_m_numSendPackets_array, numSendPackets);
+                                outputCounter(qqy_m_numSendMessages_array, numSendMessages);
+                                outputCounter(qqy_m_numSendBytes_array, numSendBytes);
+                                outputCounter(qqy_m_numRecvPackets_array, numRecvPackets);
+                                outputCounter(qqy_m_numRecvMessages_array, numRecvMessages);
+                                outputCounter(qqy_m_numRecvBytes_array, numRecvBytes);
 #endif                           
 				cout << "Loaded " << numLoaded << " k-mer. "
 					"At least "
@@ -642,6 +641,22 @@ void NetworkSequenceCollection::SetState(
 	m_numReachedCheckpoint = 0;
 	m_checkpointSum = 0;
 }
+#ifndef DEBUG_QQY_ENABLE
+/** Gather and output counter info in CommLayer
+ * @return nothing
+ */
+void NetworkSequenceCollection::outputCounter(long long unsigned *array, 
+        long long unsigned number)
+{
+    m_comm.gather(array, number);
+    for(int i=0; i<opt::numProc; i++)
+    {
+        std::cout<< opt::rank <<" !!!"<< i<< ": " << 
+                array[i] << 
+                " calls."<<std::endl;
+    }
+}
+#endif
 
 /** Receive and dispatch packets.
  * @return the number of packets received
