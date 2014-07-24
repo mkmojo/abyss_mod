@@ -466,12 +466,12 @@ void NetworkSequenceCollection::runControl()
                                 size_t numRecvMessages = m_comm.getNumRecvMessages();
                                 size_t numRecvBytes = m_comm.getNumRecvBytes();
                                 
-                                outputCounter(qqy_m_numSendPackets_array, numSendPackets);
-                                outputCounter(qqy_m_numSendMessages_array, numSendMessages);
-                                outputCounter(qqy_m_numSendBytes_array, numSendBytes);
-                                outputCounter(qqy_m_numRecvPackets_array, numRecvPackets);
-                                outputCounter(qqy_m_numRecvMessages_array, numRecvMessages);
-                                outputCounter(qqy_m_numRecvBytes_array, numRecvBytes);
+                                outputCounter(qqy_m_numSendPackets_array, numSendPackets, "NAS_LOADING");
+                                outputCounter(qqy_m_numSendMessages_array, numSendMessages, "NAS_LOADING");
+                                outputCounter(qqy_m_numSendBytes_array, numSendBytes, "NAS_LOADING");
+                                outputCounter(qqy_m_numRecvPackets_array, numRecvPackets, "NAS_LOADING");
+                                outputCounter(qqy_m_numRecvMessages_array, numRecvMessages, "NAS_LOADING");
+                                outputCounter(qqy_m_numRecvBytes_array, numRecvBytes, "NAS_LOADING");
 #endif                           
 				cout << "Loaded " << numLoaded << " k-mer. "
 					"At least "
@@ -656,13 +656,13 @@ void NetworkSequenceCollection::SetState(
  * @return nothing
  */
 void NetworkSequenceCollection::outputCounter(long long unsigned *array, 
-        long long unsigned number)
+        long long unsigned number, string phase_name)
 {
     m_comm.gather(array, number);
     cout<<"!!!-------counter--------"<<endl;
     for(int i=0; i<opt::numProc; i++)
     {
-        cout<< opt::rank <<" !!!"<< i<< ": " << array[i] << endl;
+        cout<< phase_name <<": !!!"<< i<< ": " << array[i] << endl;
     }
     cout<<"!!!----------------------"<<endl;
 }

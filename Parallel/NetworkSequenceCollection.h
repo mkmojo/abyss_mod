@@ -88,7 +88,7 @@ class NetworkSequenceCollection : public ISequenceCollection
 #ifndef DEBUG_QQY_ENABLE
                 //output counter info stored in CommLayer 
                 void outputCounter(long long unsigned *array, 
-                                long long unsigned number);
+                                long long unsigned number, string phase_name);
 #endif
                 
 		void completeOperation();
@@ -198,8 +198,6 @@ class NetworkSequenceCollection : public ISequenceCollection
 		unsigned m_numReachedCheckpoint;
 
 #ifndef DEBUG_QQY_ENABLE
-		//Counter for each processor
-                long long unsigned m_MPI_count;
                 long long unsigned qqy_m_numSendPackets_array[48];
                 long long unsigned qqy_m_numSendMessages_array[48];
                 long long unsigned qqy_m_numSendBytes_array[48];
