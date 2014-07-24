@@ -583,12 +583,12 @@ void NetworkSequenceCollection::runControl()
                                 numRecvMessages = m_comm.getNumRecvMessages();
                                 numRecvBytes = m_comm.getNumRecvBytes();
                                 
-                                //outputCounter(qqy_m_numSendPackets_array, numSendPackets, "NAS_LOADING");
-                                outputCounter(qqy_m_numSendMessages_array, numSendMessages, "NAS_LOADING Send");
-                                outputCounter(qqy_m_numSendBytes_array, numSendBytes, "NAS_LOADING");
-                                //outputCounter(qqy_m_numRecvPackets_array, numRecvPackets, "NAS_LOADING");
-                                outputCounter(qqy_m_numRecvMessages_array, numRecvMessages, "NAS_LOADING Recv");
-                                outputCounter(qqy_m_numRecvBytes_array, numRecvBytes, "NAS_LOADING");
+                                //outputCounter(qqy_m_numSendPackets_array, numSendPackets, "NAS_LOADING Send Packets:");
+                                outputCounter(qqy_m_numSendMessages_array, numSendMessages, "NAS_LOADING Send Messages:");
+                                outputCounter(qqy_m_numSendBytes_array, numSendBytes, "NAS_LOADING Send Bytes:");
+                                //outputCounter(qqy_m_numRecvPackets_array, numRecvPackets, "NAS_LOADING Recv Packets:");
+                                outputCounter(qqy_m_numRecvMessages_array, numRecvMessages, "NAS_LOADING Recv Messages:");
+                                outputCounter(qqy_m_numRecvBytes_array, numRecvBytes, "NAS_LOADING Recv Bytes:");
 #endif                           
 				cout << "Loaded " << numLoaded << " k-mer. "
 					"At least "
@@ -638,12 +638,12 @@ void NetworkSequenceCollection::runControl()
                                 numRecvMessages = m_comm.getNumRecvMessages();
                                 numRecvBytes = m_comm.getNumRecvBytes();
                                 
-                                //outputCounter(qqy_m_numSendPackets_array, numSendPackets, "NAS_GEN_ADJ");
-                                outputCounter(qqy_m_numSendMessages_array, numSendMessages, "NAS_GEN_ADJ Send");
-                                outputCounter(qqy_m_numSendBytes_array, numSendBytes, "NAS_GEN_ADJ");
-                                //outputCounter(qqy_m_numRecvPackets_array, numRecvPackets, "NAS_GEN_ADJ");
-                                outputCounter(qqy_m_numRecvMessages_array, numRecvMessages, "NAS_GEN_ADJ Recv");
-                                outputCounter(qqy_m_numRecvBytes_array, numRecvBytes, "NAS_GEN_ADJ");
+                                //outputCounter(qqy_m_numSendPackets_array, numSendPackets, "NAS_GEN_ADJ Send Packets:");
+                                outputCounter(qqy_m_numSendMessages_array, numSendMessages, "NAS_GEN_ADJ Send Messages:");
+                                outputCounter(qqy_m_numSendBytes_array, numSendBytes, "NAS_GEN_ADJ Send Bytes:");
+                                //outputCounter(qqy_m_numRecvPackets_array, numRecvPackets, "NAS_GEN_ADJ Recv Packets:");
+                                outputCounter(qqy_m_numRecvMessages_array, numRecvMessages, "NAS_GEN_ADJ Recv Messages:");
+                                outputCounter(qqy_m_numRecvBytes_array, numRecvBytes, "NAS_GEN_ADJ Recv Bytes:");
 #endif                                   
 				EndState();
 
@@ -665,12 +665,12 @@ void NetworkSequenceCollection::runControl()
                                 numRecvMessages = m_comm.getNumRecvMessages();
                                 numRecvBytes = m_comm.getNumRecvBytes();
                                 
-                                //outputCounter(qqy_m_numSendPackets_array, numSendPackets, "NAS_ERODE");
-                                outputCounter(qqy_m_numSendMessages_array, numSendMessages, "NAS_ERODE Send");
-                                outputCounter(qqy_m_numSendBytes_array, numSendBytes, "NAS_ERODE");
-                                //outputCounter(qqy_m_numRecvPackets_array, numRecvPackets, "NAS_ERODE");
-                                outputCounter(qqy_m_numRecvMessages_array, numRecvMessages, "NAS_ERODE Recv");
-                                outputCounter(qqy_m_numRecvBytes_array, numRecvBytes, "NAS_ERODE");
+                                //outputCounter(qqy_m_numSendPackets_array, numSendPackets, "NAS_ERODE Send Packets:");
+                                outputCounter(qqy_m_numSendMessages_array, numSendMessages, "NAS_ERODE Send Messages:");
+                                outputCounter(qqy_m_numSendBytes_array, numSendBytes, "NAS_ERODE Send Bytes:");
+                                //outputCounter(qqy_m_numRecvPackets_array, numRecvPackets, "NAS_ERODE Recv Packets:");
+                                outputCounter(qqy_m_numRecvMessages_array, numRecvMessages, "NAS_ERODE Recv Messages:");
+                                outputCounter(qqy_m_numRecvBytes_array, numRecvBytes, "NAS_ERODE Recv Bytes:");
 #endif                                 
 				SetState(NAS_TRIM);
 				delete rtimer;
@@ -704,12 +704,12 @@ void NetworkSequenceCollection::runControl()
                                 numRecvMessages = m_comm.getNumRecvMessages();
                                 numRecvBytes = m_comm.getNumRecvBytes();
                                 
-                                //outputCounter(qqy_m_numSendPackets_array, numSendPackets, "NAS_TRIM");
-                                outputCounter(qqy_m_numSendMessages_array, numSendMessages, "NAS_TRIM Send");
-                                outputCounter(qqy_m_numSendBytes_array, numSendBytes, "NAS_TRIM");
-                                //outputCounter(qqy_m_numRecvPackets_array, numRecvPackets, "NAS_TRIM");
-                                outputCounter(qqy_m_numRecvMessages_array, numRecvMessages, "NAS_TRIM Recv");
-                                outputCounter(qqy_m_numRecvBytes_array, numRecvBytes, "NAS_TRIM");
+                                //outputCounter(qqy_m_numSendPackets_array, numSendPackets, "NAS_TRIM Send Packets:");
+                                outputCounter(qqy_m_numSendMessages_array, numSendMessages, "NAS_TRIM Send Messages:");
+                                outputCounter(qqy_m_numSendBytes_array, numSendBytes, "NAS_TRIM Send Bytes:");
+                                //outputCounter(qqy_m_numRecvPackets_array, numRecvPackets, "NAS_TRIM Recv Packets:");
+                                outputCounter(qqy_m_numRecvMessages_array, numRecvMessages, "NAS_TRIM Recv Messages:");
+                                outputCounter(qqy_m_numRecvBytes_array, numRecvBytes, "NAS_TRIM Recv Bytes:");
 #endif                                
 				SetState(opt::coverage > 0 ? NAS_COVERAGE
 						: opt::bubbleLen > 0 ? NAS_POPBUBBLE
@@ -729,12 +729,12 @@ void NetworkSequenceCollection::runControl()
                                 numRecvMessages = m_comm.getNumRecvMessages();
                                 numRecvBytes = m_comm.getNumRecvBytes();
                                 
-                                //outputCounter(qqy_m_numSendPackets_array, numSendPackets, "NAS_COVERAGE");
-                                outputCounter(qqy_m_numSendMessages_array, numSendMessages, "NAS_COVERAGE Send");
-                                outputCounter(qqy_m_numSendBytes_array, numSendBytes, "NAS_COVERAGE");
-                                //outputCounter(qqy_m_numRecvPackets_array, numRecvPackets, "NAS_COVERAGE");
-                                outputCounter(qqy_m_numRecvMessages_array, numRecvMessages, "NAS_COVERAGE Recv");
-                                outputCounter(qqy_m_numRecvBytes_array, numRecvBytes, "NAS_COVERAGE");
+                                //outputCounter(qqy_m_numSendPackets_array, numSendPackets, "NAS_COVERAGE Send Packets:");
+                                outputCounter(qqy_m_numSendMessages_array, numSendMessages, "NAS_COVERAGE Send Messages:");
+                                outputCounter(qqy_m_numSendBytes_array, numSendBytes, "NAS_COVERAGE Send Bytes:");
+                                //outputCounter(qqy_m_numRecvPackets_array, numRecvPackets, "NAS_COVERAGE Recv Packets:");
+                                outputCounter(qqy_m_numRecvMessages_array, numRecvMessages, "NAS_COVERAGE Recv Messages:");
+                                outputCounter(qqy_m_numRecvBytes_array, numRecvBytes, "NAS_COVERAGE Recv Bytes:");
 #endif                                 
 				SetState(opt::erode > 0 ? NAS_ERODE : NAS_TRIM);
 				delete rtimer;
@@ -762,12 +762,12 @@ void NetworkSequenceCollection::runControl()
                                 numRecvMessages = m_comm.getNumRecvMessages();
                                 numRecvBytes = m_comm.getNumRecvBytes();
                                 
-                                //outputCounter(qqy_m_numSendPackets_array, numSendPackets, "NAS_POPBUBBLE");
-                                outputCounter(qqy_m_numSendMessages_array, numSendMessages, "NAS_POPBUBBLE Send");
-                                outputCounter(qqy_m_numSendBytes_array, numSendBytes, "NAS_POPBUBBLE");
-                                //outputCounter(qqy_m_numRecvPackets_array, numRecvPackets, "NAS_POPBUBBLE");
-                                outputCounter(qqy_m_numRecvMessages_array, numRecvMessages, "NAS_POPBUBBLE Recv");
-                                outputCounter(qqy_m_numRecvBytes_array, numRecvBytes, "NAS_POPBUBBLE");
+                                //outputCounter(qqy_m_numSendPackets_array, numSendPackets, "NAS_POPBUBBLE Send Packets:");
+                                outputCounter(qqy_m_numSendMessages_array, numSendMessages, "NAS_POPBUBBLE Send Messages:");
+                                outputCounter(qqy_m_numSendBytes_array, numSendBytes, "NAS_POPBUBBLE Send Bytes:");
+                                //outputCounter(qqy_m_numRecvPackets_array, numRecvPackets, "NAS_POPBUBBLE Recv Packets:");
+                                outputCounter(qqy_m_numRecvMessages_array, numRecvMessages, "NAS_POPBUBBLE Recv Messages:");
+                                outputCounter(qqy_m_numRecvBytes_array, numRecvBytes, "NAS_POPBUBBLE Recv Bytes:");
 #endif 
 				SetState(NAS_MARK_AMBIGUOUS);
 				delete rtimer;
@@ -785,12 +785,12 @@ void NetworkSequenceCollection::runControl()
                                 numRecvMessages = m_comm.getNumRecvMessages();
                                 numRecvBytes = m_comm.getNumRecvBytes();
                                 
-                                //outputCounter(qqy_m_numSendPackets_array, numSendPackets, "NAS_MARK_AMBIGUOUS");
-                                outputCounter(qqy_m_numSendMessages_array, numSendMessages, "NAS_MARK_AMBIGUOUS Send");
-                                outputCounter(qqy_m_numSendBytes_array, numSendBytes, "NAS_MARK_AMBIGUOUS");
-                                //outputCounter(qqy_m_numRecvPackets_array, numRecvPackets, "NAS_MARK_AMBIGUOUS");
-                                outputCounter(qqy_m_numRecvMessages_array, numRecvMessages, "NAS_MARK_AMBIGUOUS Recv");
-                                outputCounter(qqy_m_numRecvBytes_array, numRecvBytes, "NAS_MARK_AMBIGUOUS");
+                                //outputCounter(qqy_m_numSendPackets_array, numSendPackets, "NAS_MARK_AMBIGUOUS Send Packets:");
+                                outputCounter(qqy_m_numSendMessages_array, numSendMessages, "NAS_MARK_AMBIGUOUS Send Messages:");
+                                outputCounter(qqy_m_numSendBytes_array, numSendBytes, "NAS_MARK_AMBIGUOUS Send Bytes:");
+                                //outputCounter(qqy_m_numRecvPackets_array, numRecvPackets, "NAS_MARK_AMBIGUOUS Recv Packets:");
+                                outputCounter(qqy_m_numRecvMessages_array, numRecvMessages, "NAS_MARK_AMBIGUOUS Recv Messages:");
+                                outputCounter(qqy_m_numRecvBytes_array, numRecvBytes, "NAS_MARK_AMBIGUOUS Recv Bytes:");
 #endif                                  
 				SetState(NAS_ASSEMBLE);
 				delete rtimer;
@@ -831,12 +831,12 @@ void NetworkSequenceCollection::runControl()
                                 numRecvMessages = m_comm.getNumRecvMessages();
                                 numRecvBytes = m_comm.getNumRecvBytes();
                                 
-                                //outputCounter(qqy_m_numSendPackets_array, numSendPackets, "NAS_ASSEMBLE");
-                                outputCounter(qqy_m_numSendMessages_array, numSendMessages, "NAS_ASSEMBLE Send");
-                                outputCounter(qqy_m_numSendBytes_array, numSendBytes, "NAS_ASSEMBLE");
-                                //outputCounter(qqy_m_numRecvPackets_array, numRecvPackets, "NAS_ASSEMBLE");
-                                outputCounter(qqy_m_numRecvMessages_array, numRecvMessages, "NAS_ASSEMBLE Recv");
-                                outputCounter(qqy_m_numRecvBytes_array, numRecvBytes, "NAS_ASSEMBLE");
+                                //outputCounter(qqy_m_numSendPackets_array, numSendPackets, "NAS_ASSEMBLE Send Packets:");
+                                outputCounter(qqy_m_numSendMessages_array, numSendMessages, "NAS_ASSEMBLE Send Messages:");
+                                outputCounter(qqy_m_numSendBytes_array, numSendBytes, "NAS_ASSEMBLE Send Bytes:");
+                                //outputCounter(qqy_m_numRecvPackets_array, numRecvPackets, "NAS_ASSEMBLE Recv Packets:");
+                                outputCounter(qqy_m_numRecvMessages_array, numRecvMessages, "NAS_ASSEMBLE Recv Messages:");
+                                outputCounter(qqy_m_numRecvBytes_array, numRecvBytes, "NAS_ASSEMBLE Recv Bytes:");
 #endif     
 				SetState(NAS_DONE);
 				delete rtimer;
