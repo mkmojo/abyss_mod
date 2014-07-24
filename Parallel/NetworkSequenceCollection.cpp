@@ -272,6 +272,21 @@ void NetworkSequenceCollection::run()
 				EndState();
 				SetState(NAS_WAITING);
 				m_comm.sendCheckPointMessage(numPopped);
+#ifndef DEBUG_QQY_ENABLE
+                                numSendPackets = m_comm.getNumSendPackets();
+                                numSendMessages = m_comm.getNumSendMessages();
+                                numSendBytes = m_comm.getNumSendBytes();
+                                numRecvPackets = m_comm.getNumRecvPackets();
+                                numRecvMessages = m_comm.getNumRecvMessages();
+                                numRecvBytes = m_comm.getNumRecvBytes();
+                                
+                                m_comm.gather(NULL, numSendPackets);
+                                m_comm.gather(NULL, numSendMessages);
+                                m_comm.gather(NULL, numSendBytes);
+                                m_comm.gather(NULL, numRecvPackets);
+                                m_comm.gather(NULL, numRecvMessages);
+                                m_comm.gather(NULL, numRecvBytes);                                
+#endif                                
 				break;
 			}
 			case NAS_MARK_AMBIGUOUS:
@@ -709,7 +724,21 @@ void NetworkSequenceCollection::runControl()
 				assert(out.good());
 				out.close();
 				cout << "Removed " << numPopped << " bubbles.\n";
-
+#ifndef DEBUG_QQY_ENABLE
+                                numSendPackets = m_comm.getNumSendPackets();
+                                numSendMessages = m_comm.getNumSendMessages();
+                                numSendBytes = m_comm.getNumSendBytes();
+                                numRecvPackets = m_comm.getNumRecvPackets();
+                                numRecvMessages = m_comm.getNumRecvMessages();
+                                numRecvBytes = m_comm.getNumRecvBytes();
+                                
+                                outputCounter(qqy_m_numSendPackets_array, numSendPackets, "NAS_POPBUBBLE");
+                                outputCounter(qqy_m_numSendMessages_array, numSendMessages, "NAS_POPBUBBLE");
+                                outputCounter(qqy_m_numSendBytes_array, numSendBytes, "NAS_POPBUBBLE");
+                                outputCounter(qqy_m_numRecvPackets_array, numRecvPackets, "NAS_POPBUBBLE");
+                                outputCounter(qqy_m_numRecvMessages_array, numRecvMessages, "NAS_POPBUBBLE");
+                                outputCounter(qqy_m_numRecvBytes_array, numRecvBytes, "NAS_POPBUBBLE");
+#endif 
 				SetState(NAS_MARK_AMBIGUOUS);
 				delete rtimer;
 				break;
