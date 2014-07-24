@@ -446,7 +446,8 @@ void NetworkSequenceCollection::runControl()
 				m_data.shrink();
 				size_t numLoaded = m_comm.reduce(m_data.size());
 #ifndef DEBUG_QQY_ENABLE
-                                m_comm.gather(qqy_m_numMPIcalls_array, &m_MPI_count);
+                                uint64_t num_MPI_Packets = m_comm.getNumSendPackets();
+                                m_comm.gather(qqy_m_numMPIcalls_array, num_MPI_Packets);
                                 for(int i=0; i<opt::numProc; i++)
                                 {
                                     std::cout << i<< ": " << qqy_m_numMPIcalls_array[i] << " calls."<<std::endl;
