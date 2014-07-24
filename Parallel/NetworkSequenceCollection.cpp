@@ -659,11 +659,12 @@ void NetworkSequenceCollection::outputCounter(long long unsigned *array,
         long long unsigned number)
 {
     m_comm.gather(array, number);
+    cout<<"!!!-------counter--------"<<endl;
     for(int i=0; i<opt::numProc; i++)
     {
-        std::cout<< opt::rank <<" !!!"<< i<< ": " << 
-                array[i] <<  " calls."<<std::endl;
+        cout<< opt::rank <<" !!!"<< i<< ": " << array[i] << endl;
     }
+    cout<<"!!!----------------------"<<endl;
 }
 #endif
 

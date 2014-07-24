@@ -121,8 +121,8 @@ long long unsigned CommLayer::reduce(long long unsigned count)
 long long unsigned* CommLayer::gather(long long unsigned* rev_buffer, 
 					long long unsigned count)
 {
-    cout << "Inside gather function" << endl;
-    cout << "Gathering MPI_call info" << endl;
+    //cout << "Inside gather function" << endl;
+    //cout << "Gathering MPI_call info" << endl;
     MPI_Gather(&count, 1, MPI_UNSIGNED_LONG_LONG, rev_buffer, 1, 
             MPI_UNSIGNED_LONG_LONG, 0, MPI_COMM_WORLD);
     //Reset MPI_send call counter after gather
