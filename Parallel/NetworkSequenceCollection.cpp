@@ -83,7 +83,6 @@ void NetworkSequenceCollection::run()
 				m_data.shrink();
 				m_comm.reduce(m_data.size());
 #ifndef DEBUG_QQY_ENABLE
-
                                 size_t numSendPackets = m_comm.getNumSendPackets();
                                 size_t numSendMessages = m_comm.getNumSendMessages();
                                 size_t numSendBytes = m_comm.getNumSendBytes();
@@ -97,7 +96,6 @@ void NetworkSequenceCollection::run()
                                 m_comm.gather(NULL, numRecvPackets);
                                 m_comm.gather(NULL, numRecvMessages);
                                 m_comm.gather(NULL, numRecvBytes);                                
-
 #endif
 				Histogram myh
 					= AssemblyAlgorithms::coverageHistogram(m_data);
@@ -121,6 +119,21 @@ void NetworkSequenceCollection::run()
 				logger(0) << "Added " << m_numBasesAdjSet
 					<< " edges.\n";
 				m_comm.reduce(m_numBasesAdjSet);
+#ifndef DEBUG_QQY_ENABLE
+                                size_t numSendPackets = m_comm.getNumSendPackets();
+                                size_t numSendMessages = m_comm.getNumSendMessages();
+                                size_t numSendBytes = m_comm.getNumSendBytes();
+                                size_t numRecvPackets = m_comm.getNumRecvPackets();
+                                size_t numRecvMessages = m_comm.getNumRecvMessages();
+                                size_t numRecvBytes = m_comm.getNumRecvBytes();
+                                
+                                m_comm.gather(NULL, numSendPackets);
+                                m_comm.gather(NULL, numSendMessages);
+                                m_comm.gather(NULL, numSendBytes);
+                                m_comm.gather(NULL, numRecvPackets);
+                                m_comm.gather(NULL, numRecvMessages);
+                                m_comm.gather(NULL, numRecvBytes);                                
+#endif                                
 				EndState();
 				SetState(NAS_WAITING);
 				break;
@@ -508,6 +521,22 @@ void NetworkSequenceCollection::runControl()
 						NAS_ADJ_COMPLETE);
 				m_comm.barrier();
 				pumpNetwork();
+#ifndef DEBUG_QQY_ENABLE
+                                size_t numSendPackets = m_comm.getNumSendPackets();
+                                size_t numSendMessages = m_comm.getNumSendMessages();
+                                size_t numSendBytes = m_comm.getNumSendBytes();
+                                size_t numRecvPackets = m_comm.getNumRecvPackets();
+                                size_t numRecvMessages = m_comm.getNumRecvMessages();
+                                size_t numRecvBytes = m_comm.getNumRecvBytes();
+                                
+                                outputCounter(qqy_m_numSendPackets_array, numSendPackets, "NAS_GEN_ADJ");
+                                outputCounter(qqy_m_numSendMessages_array, numSendMessages, "NAS_GEN_ADJ");
+                                outputCounter(qqy_m_numSendBytes_array, numSendBytes, "NAS_GEN_ADJ");
+                                outputCounter(qqy_m_numRecvPackets_array, numRecvPackets, "NAS_GEN_ADJ");
+                                outputCounter(qqy_m_numRecvMessages_array, numRecvMessages, "NAS_GEN_ADJ");
+                                outputCounter(qqy_m_numRecvBytes_array, numRecvBytes, "NAS_GEN_ADJ");
+#endif   
+                               
 				logger(0) << "Added " << m_numBasesAdjSet
 					<< " edges.\n";
 				cout << "Added " << m_comm.reduce(m_numBasesAdjSet)
