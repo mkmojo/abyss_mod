@@ -448,11 +448,12 @@ void NetworkSequenceCollection::runControl()
 #ifndef DEBUG_QQY_ENABLE
                                 size_t numSendPackets = m_comm.getNumSendPackets();
                                 m_comm.gather(qqy_m_numMPIcalls_array, numSendPackets);
+                                //print resultout
                                 for(int i=0; i<opt::numProc; i++)
                                 {
-                                    std::cout << i<< ": " << qqy_m_numMPIcalls_array[i] << " calls."<<std::endl;
+                                    std::cout <<"!!!"<< i<< ": " << qqy_m_numMPIcalls_array[i] 
+                                            << " calls."<<std::endl;
                                 }
-                                std::cout<< std::endl;
 #endif                           
 				cout << "Loaded " << numLoaded << " k-mer. "
 					"At least "
