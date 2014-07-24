@@ -78,7 +78,7 @@ class CommLayer
                     return m_txBytes;
                 }
                 
-                uint64_t getRecvPackets()
+                uint64_t getNumRecvPackets()
                 {
                     return m_rxPackets;
                 }

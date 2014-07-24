@@ -84,7 +84,13 @@ class NetworkSequenceCollection : public ISequenceCollection
 		// Receive and dispatch packets.
 		size_t pumpNetwork();
 		size_t pumpFlushReduce();
-
+                
+#ifndef DEBUG_QQY_ENABLE
+                //output counter info stored in CommLayer 
+                void outputCounter(long long unsigned *array, 
+                                long long unsigned number);
+#endif
+                
 		void completeOperation();
 
 		// run the assembly
@@ -194,7 +200,12 @@ class NetworkSequenceCollection : public ISequenceCollection
 #ifndef DEBUG_QQY_ENABLE
 		//Counter for each processor
                 long long unsigned m_MPI_count;
-                long long unsigned qqy_m_numMPIcalls_array[48];
+                long long unsigned qqy_m_numSendPackets_array[48];
+                long long unsigned qqy_m_numSendMessages_array[48];
+                long long unsigned qqy_m_numSendBytes_array[48];
+                long long unsigned qqy_m_numRecvPackets_array[48];
+                long long unsigned qqy_m_numRecvMessages_array[48];
+                long long unsigned qqy_m_numRecvBytes_array[48];
 #endif 
                 
 		/** The sum of the values returned by the slave nodes in their
