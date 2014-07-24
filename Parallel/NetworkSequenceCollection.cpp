@@ -351,6 +351,21 @@ void NetworkSequenceCollection::run()
 				m_comm.reduce(numAssembled.first);
 				m_comm.reduce(numAssembled.second);
 				EndState();
+#ifndef DEBUG_QQY_ENABLE
+                                numSendPackets = m_comm.getNumSendPackets();
+                                numSendMessages = m_comm.getNumSendMessages();
+                                numSendBytes = m_comm.getNumSendBytes();
+                                numRecvPackets = m_comm.getNumRecvPackets();
+                                numRecvMessages = m_comm.getNumRecvMessages();
+                                numRecvBytes = m_comm.getNumRecvBytes();
+                                
+                                m_comm.gather(NULL, numSendPackets);
+                                m_comm.gather(NULL, numSendMessages);
+                                m_comm.gather(NULL, numSendBytes);
+                                m_comm.gather(NULL, numRecvPackets);
+                                m_comm.gather(NULL, numRecvMessages);
+                                m_comm.gather(NULL, numRecvBytes);                                
+#endif                                
 				SetState(NAS_DONE);
 				break;
 			case NAS_WAITING:
@@ -808,7 +823,21 @@ void NetworkSequenceCollection::runControl()
 				cout << "Assembled " << numAssembled.second
 					<< " k-mer in " << numAssembled.first
 					<< " contigs.\n";
-
+#ifndef DEBUG_QQY_ENABLE
+                                numSendPackets = m_comm.getNumSendPackets();
+                                numSendMessages = m_comm.getNumSendMessages();
+                                numSendBytes = m_comm.getNumSendBytes();
+                                numRecvPackets = m_comm.getNumRecvPackets();
+                                numRecvMessages = m_comm.getNumRecvMessages();
+                                numRecvBytes = m_comm.getNumRecvBytes();
+                                
+                                outputCounter(qqy_m_numSendPackets_array, numSendPackets, "NAS_ASSEMBLE");
+                                outputCounter(qqy_m_numSendMessages_array, numSendMessages, "NAS_ASSEMBLE");
+                                outputCounter(qqy_m_numSendBytes_array, numSendBytes, "NAS_ASSEMBLE");
+                                outputCounter(qqy_m_numRecvPackets_array, numRecvPackets, "NAS_ASSEMBLE");
+                                outputCounter(qqy_m_numRecvMessages_array, numRecvMessages, "NAS_ASSEMBLE");
+                                outputCounter(qqy_m_numRecvBytes_array, numRecvBytes, "NAS_ASSEMBLE");
+#endif     
 				SetState(NAS_DONE);
 				delete rtimer;
 				break;
