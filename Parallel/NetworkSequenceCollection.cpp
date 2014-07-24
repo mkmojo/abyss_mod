@@ -534,6 +534,11 @@ void NetworkSequenceCollection::runControl()
 						NAS_ADJ_COMPLETE);
 				m_comm.barrier();
 				pumpNetwork();
+                               
+				logger(0) << "Added " << m_numBasesAdjSet
+					<< " edges.\n";
+				cout << "Added " << m_comm.reduce(m_numBasesAdjSet)
+					<< " edges.\n";
 #ifndef DEBUG_QQY_ENABLE
                                 numSendPackets = m_comm.getNumSendPackets();
                                 numSendMessages = m_comm.getNumSendMessages();
@@ -548,12 +553,7 @@ void NetworkSequenceCollection::runControl()
                                 outputCounter(qqy_m_numRecvPackets_array, numRecvPackets, "NAS_GEN_ADJ");
                                 outputCounter(qqy_m_numRecvMessages_array, numRecvMessages, "NAS_GEN_ADJ");
                                 outputCounter(qqy_m_numRecvBytes_array, numRecvBytes, "NAS_GEN_ADJ");
-#endif   
-                               
-				logger(0) << "Added " << m_numBasesAdjSet
-					<< " edges.\n";
-				cout << "Added " << m_comm.reduce(m_numBasesAdjSet)
-					<< " edges.\n";
+#endif                                   
 				EndState();
 
 				SetState(opt::erode > 0 ? NAS_ERODE : NAS_TRIM);
