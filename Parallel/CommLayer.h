@@ -85,12 +85,12 @@ class CommLayer
                 
                 uint64_t getNumRecvMessages()
                 {
-                    return m_txMessages;
+                    return m_rxMessages;
                 }
                 
                 uint64_t getNumRecvBytes()
                 {
-                    return m_txBytes;
+                    return m_rxBytes;
                 }
 #endif
                 

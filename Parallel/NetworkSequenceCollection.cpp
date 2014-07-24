@@ -91,12 +91,12 @@ void NetworkSequenceCollection::run()
                                 size_t numRecvMessages = m_comm.getNumRecvMessages();
                                 size_t numRecvBytes = m_comm.getNumRecvBytes();
                                 
-                                m_comm.gather(qqy_m_numSendPackets_array, numSendPackets);
-                                m_comm.gather(qqy_m_numSendMessages_array, numSendMessages);
-                                m_comm.gather(qqy_m_numSendBytes_array, numSendBytes);
-                                m_comm.gather(qqy_m_numRecvPackets_array, numRecvPackets);
-                                m_comm.gather(qqy_m_numRecvMessages_array, numRecvMessages);
-                                m_comm.gather(qqy_m_numRecvBytes_array, numRecvBytes);                                
+                                m_comm.gather(NULL, numSendPackets);
+                                m_comm.gather(NULL, numSendMessages);
+                                m_comm.gather(NULL, numSendBytes);
+                                m_comm.gather(NULL, numRecvPackets);
+                                m_comm.gather(NULL, numRecvMessages);
+                                m_comm.gather(NULL, numRecvBytes);                                
 
 #endif
 				Histogram myh
@@ -662,8 +662,7 @@ void NetworkSequenceCollection::outputCounter(long long unsigned *array,
     for(int i=0; i<opt::numProc; i++)
     {
         std::cout<< opt::rank <<" !!!"<< i<< ": " << 
-                array[i] << 
-                " calls."<<std::endl;
+                array[i] <<  " calls."<<std::endl;
     }
 }
 #endif
