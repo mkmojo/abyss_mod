@@ -586,7 +586,6 @@ size_t erodeEnds(ISequenceCollection* seqCollection)
         std::string rank;
         rank = std::to_string(opt::rank);
         
-        std::cout<< "rank is : "<<rank;
         RTimer erodeEndsTimer("QQ:" + rank + "Erode");
 	assert(g_numEroded == 0);
 	seqCollection->attach(erosionObserver);
