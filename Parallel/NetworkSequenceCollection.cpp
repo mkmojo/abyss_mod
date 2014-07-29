@@ -696,6 +696,10 @@ void NetworkSequenceCollection::runControl()
 			{
 				RTimer *rtimer = new RTimer("NAS_TRIM");
 				controlTrim();
+                              
+				SetState(opt::coverage > 0 ? NAS_COVERAGE
+						: opt::bubbleLen > 0 ? NAS_POPBUBBLE
+						: NAS_MARK_AMBIGUOUS);
 #ifndef DEBUG_QQY_ENABLE
                                 //numSendPackets = m_comm.getNumSendPackets();
                                 numSendMessages = m_comm.getNumSendMessages();
@@ -710,10 +714,7 @@ void NetworkSequenceCollection::runControl()
                                 //outputCounter(qqy_m_numRecvPackets_array, numRecvPackets, "NAS_TRIM Recv Packets:");
                                 outputCounter(qqy_m_numRecvMessages_array, numRecvMessages, "NAS_TRIM Recv Messages:");
                                 outputCounter(qqy_m_numRecvBytes_array, numRecvBytes, "NAS_TRIM Recv Bytes:");
-#endif                                
-				SetState(opt::coverage > 0 ? NAS_COVERAGE
-						: opt::bubbleLen > 0 ? NAS_POPBUBBLE
-						: NAS_MARK_AMBIGUOUS);
+#endif  
 				delete rtimer;
 				break;
 			}
