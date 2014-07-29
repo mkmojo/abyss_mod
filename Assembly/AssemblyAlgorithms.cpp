@@ -585,7 +585,7 @@ size_t erodeEnds(ISequenceCollection* seqCollection)
 {
         ostringstream rank;
         rank << opt::rank;
-        RTimer *erodeEndsTimer = new RTimer("QQ:" + rank.str() + "Erode");
+        RTimer *erodeEndsTimer = new RTimer("NAS erodeEnds(computation) : " + rank.str() );
 	assert(g_numEroded == 0);
 	seqCollection->attach(erosionObserver);
 
