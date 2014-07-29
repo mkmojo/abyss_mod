@@ -585,7 +585,7 @@ size_t erodeEnds(ISequenceCollection* seqCollection)
 {
         ostringstream rank;
         rank << opt::rank;
-        RTimer erodeEndsTimer("QQ:" + rank.str() + "Erode");
+        RTimer *erodeEndsTimer = new RTimer("QQ:" + rank.str() + "Erode");
 	assert(g_numEroded == 0);
 	seqCollection->attach(erosionObserver);
 
@@ -596,6 +596,7 @@ size_t erodeEnds(ISequenceCollection* seqCollection)
 	}
 
 	seqCollection->detach(erosionObserver);
+        delete erodeEndsTimer;
 	return getNumEroded();
 }
 
