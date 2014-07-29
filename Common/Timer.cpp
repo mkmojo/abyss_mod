@@ -50,4 +50,3 @@ QTimer::~QTimer()
 }
 
 /**********End Qiyuan Qiu *************/
-/**just weasldkfja;lskdjf*/
