@@ -128,10 +128,10 @@
 #define HAVE_STDLIB_H 1
 
 /* Define if the system provides std::hash */
-#define HAVE_STD_HASH 1
+/* #undef HAVE_STD_HASH */
 
 /* Define if the system provides std::tr1::hash */
-/* #undef HAVE_STD_TR1_HASH */
+#define HAVE_STD_TR1_HASH 1
 
 /* Define to 1 if you have the `strdup' function. */
 #define HAVE_STRDUP 1
@@ -158,22 +158,22 @@
 #define HAVE_SYS_TYPES_H 1
 
 /* Define to 1 if you have the <tr1/functional> header file. */
-/* #undef HAVE_TR1_FUNCTIONAL */
+#define HAVE_TR1_FUNCTIONAL 1
 
 /* Define to 1 if you have the <tr1/unordered_map> header file. */
-/* #undef HAVE_TR1_UNORDERED_MAP */
+#define HAVE_TR1_UNORDERED_MAP 1
 
 /* Define to 1 if you have the <tr1/unordered_set> header file. */
-/* #undef HAVE_TR1_UNORDERED_SET */
+#define HAVE_TR1_UNORDERED_SET 1
 
 /* Define to 1 if you have the <unistd.h> header file. */
 #define HAVE_UNISTD_H 1
 
 /* Define to 1 if you have the <unordered_map> header file. */
-#define HAVE_UNORDERED_MAP 1
+/* #undef HAVE_UNORDERED_MAP */
 
 /* Define to 1 if you have the <unordered_set> header file. */
-#define HAVE_UNORDERED_SET 1
+/* #undef HAVE_UNORDERED_SET */
 
 /* Define to 1 if you have the `vfork' function. */
 #define HAVE_VFORK 1
@@ -194,7 +194,7 @@
 #define HAVE__BOOL 1
 
 /* Define if the system does not provide HOST_NAME_MAX */
-#define HOST_NAME_MAX _POSIX_HOST_NAME_MAX
+/* #undef HOST_NAME_MAX */
 
 /* maximum k-mer length */
 #define MAX_KMER 64

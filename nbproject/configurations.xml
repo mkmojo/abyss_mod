@@ -157,7 +157,6 @@
       <flagsDictionary>
         <element flagsID="0" commonFlags="-O2"/>
         <element flagsID="1" commonFlags="-fopenmp -O2"/>
-        <element flagsID="2" commonFlags="-g -O2"/>
       </flagsDictionary>
       <codeAssistance>
       </codeAssistance>
@@ -185,12 +184,8 @@
         </makeTool>
       </makefileType>
       <item path="ABYSS/Abyss.cpp" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="AdjList/AdjList.cpp" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="Align/align.cc" ex="false" tool="1" flavor2="0">
         <ccTool flags="1">
@@ -237,156 +232,80 @@
         </ccTool>
       </item>
       <item path="Assembly/AssemblyAlgorithms.cpp" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="Assembly/BranchGroup.cpp" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="Assembly/BranchRecord.cpp" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="Assembly/DotWriter.cpp" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="Assembly/Options.cpp" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="Assembly/SequenceCollection.cpp" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="Common/ContigID.cpp" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="Common/Fcontrol.cpp" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="Common/Histogram.cpp" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="Common/Kmer.cpp" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="Common/Log.cpp" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="Common/Options.cpp" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="Common/SeqExt.cpp" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="Common/Sequence.cpp" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="Common/SignalHandler.cpp" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="Common/Timer.cpp" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="Common/Uncompress.cpp" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="Common/city.cc" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="Consensus/Consensus.cpp" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="DAssembler/DAssembler.cpp" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="DAssembler/RotatedRead.cpp" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="DataLayer/FastaReader.cpp" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="DataLayer/FastaWriter.cpp" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="DataLayer/abyss-tofastq.cc" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="DataLayer/fac.cc" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="DistanceEst/DistanceEst.cpp" ex="false" tool="1" flavor2="0">
-        <ccTool flags="1">
-        </ccTool>
       </item>
       <item path="DistanceEst/MLE.cpp" ex="false" tool="1" flavor2="0">
-        <ccTool flags="1">
-        </ccTool>
       </item>
       <item path="FMIndex/abyss-dawg.cc" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="FMIndex/bit_array.cc" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="FMIndex/count.cc" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="FilterGraph/FilterGraph.cpp" ex="false" tool="1" flavor2="0">
-        <ccTool flags="1">
-        </ccTool>
       </item>
       <item path="GapFiller/gapfill.cpp" ex="false" tool="1" flavor2="0">
-        <ccTool flags="1">
-        </ccTool>
       </item>
       <item path="Graph/gc.cc" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="Graph/todot.cc" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="KAligner/Aligner.cpp" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="KAligner/KAligner.cpp" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="Layout/layout.cc" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="Map/index.cc" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="Map/map.cc" ex="false" tool="1" flavor2="0">
         <ccTool flags="1">
@@ -396,8 +315,6 @@
         </ccTool>
       </item>
       <item path="Map/overlap.cc" ex="false" tool="1" flavor2="0">
-        <ccTool flags="1">
-        </ccTool>
       </item>
       <item path="MergePaths/MergeContigs.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">
@@ -430,35 +347,21 @@
         </ccTool>
       </item>
       <item path="Overlap/Overlap.cpp" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="Parallel/CommLayer.cpp" ex="false" tool="1" flavor2="4">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="Parallel/MessageBuffer.cpp" ex="false" tool="1" flavor2="4">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="Parallel/Messages.cpp" ex="false" tool="1" flavor2="4">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="Parallel/NetworkSequenceCollection.cpp"
             ex="false"
             tool="1"
             flavor2="4">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="Parallel/parallelAbyss.cpp" ex="false" tool="1" flavor2="4">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="ParseAligns/ParseAligns.cpp" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="ParseAligns/abyss-fixmate.cc" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">
@@ -468,72 +371,38 @@
         </ccTool>
       </item>
       <item path="PathOverlap/PathOverlap.cpp" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="PopBubbles/PopBubbles.cpp" ex="false" tool="1" flavor2="0">
-        <ccTool flags="1">
-        </ccTool>
       </item>
       <item path="Scaffold/drawgraph.cc" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="Scaffold/junction.cc" ex="false" tool="1" flavor2="0">
-        <ccTool flags="1">
-        </ccTool>
       </item>
       <item path="Scaffold/longseqdist.cpp" ex="false" tool="1" flavor2="0">
-        <ccTool flags="1">
-        </ccTool>
       </item>
       <item path="Scaffold/scaffold.cc" ex="false" tool="1" flavor2="0">
-        <ccTool flags="1">
-        </ccTool>
       </item>
       <item path="SimpleGraph/SimpleGraph.cpp" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
-        </ccTool>
       </item>
       <item path="connectpairs/connectpairs.cc" ex="false" tool="1" flavor2="0">
-        <ccTool flags="1">
-        </ccTool>
       </item>
       <item path="dialign/alig.c" ex="false" tool="0" flavor2="0">
-        <cTool flags="2">
-        </cTool>
       </item>
       <item path="dialign/assemble.c" ex="false" tool="0" flavor2="0">
-        <cTool flags="2">
-        </cTool>
       </item>
       <item path="dialign/diag.c" ex="false" tool="0" flavor2="0">
-        <cTool flags="2">
-        </cTool>
       </item>
       <item path="dialign/io.c" ex="false" tool="0" flavor2="0">
-        <cTool flags="2">
-        </cTool>
       </item>
       <item path="dialign/museq.c" ex="false" tool="0" flavor2="0">
-        <cTool flags="2">
-        </cTool>
       </item>
       <item path="dialign/orf.c" ex="false" tool="0" flavor2="0">
-        <cTool flags="2">
-        </cTool>
       </item>
       <item path="dialign/parameters.c" ex="false" tool="0" flavor2="0">
-        <cTool flags="2">
-        </cTool>
       </item>
       <item path="dialign/prob.c" ex="false" tool="0" flavor2="0">
-        <cTool flags="2">
-        </cTool>
       </item>
       <item path="dialign/translate.c" ex="false" tool="0" flavor2="0">
-        <cTool flags="2">
-        </cTool>
       </item>
       <folder path="0/ABYSS">
         <ccTool>
@@ -819,8 +688,6 @@
         </ccTool>
       </folder>
       <item path="kmerprint/kmerprint.cc" ex="false" tool="1" flavor2="0">
-        <ccTool flags="0">
-        </ccTool>
       </item>
     </conf>
   </confs>

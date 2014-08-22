@@ -1,0 +1,485 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ACLOCAL	Makefile	/^ACLOCAL = ${SHELL} \/home\/qiuqiyuan\/git-repos\/abyss_mod\/missing aclocal-1.14$/;"	m
+ACLOCAL_M4	Makefile	/^ACLOCAL_M4 = $(top_srcdir)\/aclocal.m4$/;"	m
+AMTAR	Makefile	/^AMTAR = $${TAR-tar}$/;"	m
+AM_CXXFLAGS	Makefile	/^AM_CXXFLAGS = -Wall -Wextra -Werror$/;"	m
+AM_DEFAULT_VERBOSITY	Makefile	/^AM_DEFAULT_VERBOSITY = 1$/;"	m
+AM_V_AR	Makefile	/^AM_V_AR = $(am__v_AR_$(V))$/;"	m
+AM_V_CC	Makefile	/^AM_V_CC = $(am__v_CC_$(V))$/;"	m
+AM_V_CCLD	Makefile	/^AM_V_CCLD = $(am__v_CCLD_$(V))$/;"	m
+AM_V_CXX	Makefile	/^AM_V_CXX = $(am__v_CXX_$(V))$/;"	m
+AM_V_CXXLD	Makefile	/^AM_V_CXXLD = $(am__v_CXXLD_$(V))$/;"	m
+AM_V_GEN	Makefile	/^AM_V_GEN = $(am__v_GEN_$(V))$/;"	m
+AM_V_P	Makefile	/^AM_V_P = $(am__v_P_$(V))$/;"	m
+AM_V_at	Makefile	/^AM_V_at = $(am__v_at_$(V))$/;"	m
+AM_V_lt	Makefile	/^AM_V_lt = $(am__v_lt_$(V))$/;"	m
+AR	Makefile	/^AR = ar$/;"	m
+ARFLAGS	Makefile	/^ARFLAGS = cru$/;"	m
+ASSEMBLYALGORITHMS_H	AssemblyAlgorithms.h	2;"	d
+ASSEMBLY_OPTIONS_H	Options.h	2;"	d
+AUTOCONF	Makefile	/^AUTOCONF = ${SHELL} \/home\/qiuqiyuan\/git-repos\/abyss_mod\/missing autoconf$/;"	m
+AUTOHEADER	Makefile	/^AUTOHEADER = ${SHELL} \/home\/qiuqiyuan\/git-repos\/abyss_mod\/missing autoheader$/;"	m
+AUTOMAKE	Makefile	/^AUTOMAKE = ${SHELL} \/home\/qiuqiyuan\/git-repos\/abyss_mod\/missing automake-1.14$/;"	m
+AWK	Makefile	/^AWK = mawk$/;"	m
+AssemblyAlgorithms	AssemblyAlgorithms.cpp	/^namespace AssemblyAlgorithms$/;"	n	file:
+AssemblyAlgorithms	AssemblyAlgorithms.h	/^namespace AssemblyAlgorithms$/;"	n
+BGS_ACTIVE	BranchGroup.h	/^	BGS_ACTIVE,$/;"	e	enum:BranchGroupStatus
+BGS_JOINED	BranchGroup.h	/^	BGS_JOINED,$/;"	e	enum:BranchGroupStatus
+BGS_NOEXT	BranchGroup.h	/^	BGS_NOEXT,$/;"	e	enum:BranchGroupStatus
+BGS_TOOLONG	BranchGroup.h	/^	BGS_TOOLONG,$/;"	e	enum:BranchGroupStatus
+BGS_TOOMANYBRANCHES	BranchGroup.h	/^	BGS_TOOMANYBRANCHES$/;"	e	enum:BranchGroupStatus
+BRANCHGROUP_H	BranchGroup.h	2;"	d
+BRANCHRECORD_H	BranchRecord.h	2;"	d
+BS_ACTIVE	BranchRecord.h	/^	BS_ACTIVE,$/;"	e	enum:BranchState
+BS_AMBI_OPP	BranchRecord.h	/^	BS_AMBI_OPP,$/;"	e	enum:BranchState
+BS_AMBI_SAME	BranchRecord.h	/^	BS_AMBI_SAME,$/;"	e	enum:BranchState
+BS_NOEXT	BranchRecord.h	/^	BS_NOEXT,$/;"	e	enum:BranchState
+BS_TOO_LONG	BranchRecord.h	/^	BS_TOO_LONG,$/;"	e	enum:BranchState
+BranchData	BranchRecord.h	/^		typedef std::vector<value_type> BranchData;$/;"	t	class:BranchRecord
+BranchGroup	BranchGroup.h	/^		BranchGroup()$/;"	f	class:BranchGroup
+BranchGroup	BranchGroup.h	/^		BranchGroup(const BranchGroup& o)$/;"	f	class:BranchGroup
+BranchGroup	BranchGroup.h	/^		BranchGroup(extDirection dir, size_t maxNumBranches,$/;"	f	class:BranchGroup
+BranchGroup	BranchGroup.h	/^class BranchGroup$/;"	c
+BranchGroupData	BranchGroup.h	/^		typedef std::vector<BranchRecord> BranchGroupData;$/;"	t	class:BranchGroup
+BranchGroupStatus	BranchGroup.h	/^enum BranchGroupStatus$/;"	g
+BranchRecord	BranchRecord.h	/^		BranchRecord() : m_dir(SENSE), m_state(BS_ACTIVE) { }$/;"	f	class:BranchRecord
+BranchRecord	BranchRecord.h	/^		explicit BranchRecord(extDirection dir)$/;"	f	class:BranchRecord
+BranchRecord	BranchRecord.h	/^class BranchRecord$/;"	c
+BranchState	BranchRecord.h	/^enum BranchState$/;"	g
+CC	Makefile	/^CC = gcc$/;"	m
+CCDEPMODE	Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
+CCLD	Makefile	/^CCLD = $(CC)$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -g -O2$/;"	m
+COMPILE	Makefile	/^COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \\$/;"	m
+CONFIG_CLEAN_FILES	Makefile	/^CONFIG_CLEAN_FILES =$/;"	m
+CONFIG_CLEAN_VPATH_FILES	Makefile	/^CONFIG_CLEAN_VPATH_FILES =$/;"	m
+CONFIG_HEADER	Makefile	/^CONFIG_HEADER = $(top_builddir)\/config.h$/;"	m
+COVERAGE_HIST	Options.cpp	/^enum { OPT_HELP = 1, OPT_VERSION, COVERAGE_HIST };$/;"	e	enum:opt::__anon1	file:
+COVERAGE_MAX	KmerData.h	49;"	d
+CPP	Makefile	/^CPP = gcc -E$/;"	m
+CPPFLAGS	Makefile	/^CPPFLAGS = -I.  -I\/home\/qiuqiyuan\/openmpi-1.6.5\/include  $/;"	m
+CTAGS	Makefile	/^CTAGS = ctags$/;"	m
+CXX	Makefile	/^CXX = g++$/;"	m
+CXXCOMPILE	Makefile	/^CXXCOMPILE = $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) \\$/;"	m
+CXXCPP	Makefile	/^CXXCPP = g++ -E$/;"	m
+CXXDEPMODE	Makefile	/^CXXDEPMODE = depmode=gcc3$/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS = -g -O2$/;"	m
+CXXLD	Makefile	/^CXXLD = $(CXX)$/;"	m
+CXXLINK	Makefile	/^CXXLINK = $(CXXLD) $(AM_CXXFLAGS) $(CXXFLAGS) $(AM_LDFLAGS) $(LDFLAGS) \\$/;"	m
+CYGPATH_W	Makefile	/^CYGPATH_W = echo$/;"	m
+DEFAULT_INCLUDES	Makefile	/^DEFAULT_INCLUDES = -I. -I$(top_builddir)$/;"	m
+DEFS	Makefile	/^DEFS = -DHAVE_CONFIG_H$/;"	m
+DEPDIR	Makefile	/^DEPDIR = .deps$/;"	m
+DISTFILES	Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m
+DIST_COMMON	Makefile	/^DIST_COMMON = $(srcdir)\/Makefile.in $(srcdir)\/Makefile.am \\$/;"	m
+DIST_SOURCES	Makefile	/^DIST_SOURCES = $(libassembly_a_SOURCES)$/;"	m
+DOTWRITER_H	DotWriter.h	2;"	d
+DotWriter	DotWriter.h	/^class DotWriter {$/;"	c
+ECHO_C	Makefile	/^ECHO_C = $/;"	m
+ECHO_N	Makefile	/^ECHO_N = -n$/;"	m
+ECHO_T	Makefile	/^ECHO_T = $/;"	m
+EGREP	Makefile	/^EGREP = \/bin\/grep -E$/;"	m
+ETAGS	Makefile	/^ETAGS = etags$/;"	m
+EXEEXT	Makefile	/^EXEEXT = $/;"	m
+ExtensionRecord	KmerData.h	/^struct ExtensionRecord$/;"	s
+GHC	Makefile	/^GHC = $/;"	m
+GHC_PKG	Makefile	/^GHC_PKG = $/;"	m
+GREP	Makefile	/^GREP = \/bin\/grep$/;"	m
+GTEST_LIBS	Makefile	/^GTEST_LIBS = -lpthread -ldl -lm $/;"	m
+Graph	DotWriter.cpp	/^typedef SequenceCollectionHash Graph;$/;"	t	file:
+INSTALL	Makefile	/^INSTALL = \/usr\/bin\/install -c$/;"	m
+INSTALL_DATA	Makefile	/^INSTALL_DATA = ${INSTALL} -m 644$/;"	m
+INSTALL_HEADER	Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m
+INSTALL_PROGRAM	Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
+INSTALL_SCRIPT	Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
+INSTALL_STRIP_PROGRAM	Makefile	/^INSTALL_STRIP_PROGRAM = $(install_sh) -c -s$/;"	m
+ISEQUENCECOLLECTION_H	ISequenceCollection.h	2;"	d
+ISequenceCollection	ISequenceCollection.h	/^class ISequenceCollection$/;"	c
+It	SequenceCollection.h	/^	typedef SequenceCollectionHash::const_iterator It;$/;"	t	struct:boost::graph_traits::vertex_iterator
+KMERDATA_H	KmerData.h	2;"	d
+KmerData	KmerData.h	/^	KmerData() : m_flags(0)$/;"	f	class:KmerData
+KmerData	KmerData.h	/^	KmerData(extDirection dir, unsigned multiplicity) : m_flags(0)$/;"	f	class:KmerData
+KmerData	KmerData.h	/^	KmerData(unsigned multiplicity, ExtensionRecord ext)$/;"	f	class:KmerData
+KmerData	KmerData.h	/^class KmerData$/;"	c
+LDFLAGS	Makefile	/^LDFLAGS = -L\/home\/qiuqiyuan\/openmpi-1.6.5\/lib  $/;"	m
+LIBOBJS	Makefile	/^LIBOBJS = $/;"	m
+LIBRARIES	Makefile	/^LIBRARIES = $(noinst_LIBRARIES)$/;"	m
+LIBS	Makefile	/^LIBS = -ldl -lm $/;"	m
+LINK	Makefile	/^LINK = $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(AM_LDFLAGS) $(LDFLAGS) -o $@$/;"	m
+LTLIBOBJS	Makefile	/^LTLIBOBJS = $/;"	m
+MAKEINFO	Makefile	/^MAKEINFO = ${SHELL} \/home\/qiuqiyuan\/git-repos\/abyss_mod\/missing makeinfo$/;"	m
+MKDIR_P	Makefile	/^MKDIR_P = \/bin\/mkdir -p$/;"	m
+MPI_LIBS	Makefile	/^MPI_LIBS = -lmpi $/;"	m
+NORMAL_INSTALL	Makefile	/^NORMAL_INSTALL = :$/;"	m
+NORMAL_UNINSTALL	Makefile	/^NORMAL_UNINSTALL = :$/;"	m
+OBJEXT	Makefile	/^OBJEXT = o$/;"	m
+OPENMP_CXXFLAGS	Makefile	/^OPENMP_CXXFLAGS = -fopenmp$/;"	m
+OPT_HELP	Options.cpp	/^enum { OPT_HELP = 1, OPT_VERSION, COVERAGE_HIST };$/;"	e	enum:opt::__anon1	file:
+OPT_VERSION	Options.cpp	/^enum { OPT_HELP = 1, OPT_VERSION, COVERAGE_HIST };$/;"	e	enum:opt::__anon1	file:
+PACKAGE	Makefile	/^PACKAGE = abyss$/;"	m
+PACKAGE_BUGREPORT	Makefile	/^PACKAGE_BUGREPORT = abyss-users@bcgsc.ca$/;"	m
+PACKAGE_NAME	Makefile	/^PACKAGE_NAME = ABySS$/;"	m
+PACKAGE_STRING	Makefile	/^PACKAGE_STRING = ABySS 1.5.1$/;"	m
+PACKAGE_TARNAME	Makefile	/^PACKAGE_TARNAME = abyss$/;"	m
+PACKAGE_URL	Makefile	/^PACKAGE_URL = http:\/\/www.bcgsc.ca\/platform\/bioinfo\/software\/abyss$/;"	m
+PACKAGE_VERSION	Makefile	/^PACKAGE_VERSION = 1.5.1$/;"	m
+PATH_SEPARATOR	Makefile	/^PATH_SEPARATOR = :$/;"	m
+POST_INSTALL	Makefile	/^POST_INSTALL = :$/;"	m
+POST_UNINSTALL	Makefile	/^POST_UNINSTALL = :$/;"	m
+PRE_INSTALL	Makefile	/^PRE_INSTALL = :$/;"	m
+PRE_UNINSTALL	Makefile	/^PRE_UNINSTALL = :$/;"	m
+PROGRAM	Options.cpp	17;"	d	file:
+RANLIB	Makefile	/^RANLIB = ranlib$/;"	m
+SC_CONTIGUOUS	AssemblyAlgorithms.h	/^	SC_CONTIGUOUS \/\/ the sequence is closed on both ends$/;"	e	enum:SeqContiguity
+SC_ENDPOINT	AssemblyAlgorithms.h	/^	SC_ENDPOINT, \/\/ one end of the sequence is open$/;"	e	enum:SeqContiguity
+SC_ISLAND	AssemblyAlgorithms.h	/^	SC_ISLAND, \/\/ sequence is completely isolated$/;"	e	enum:SeqContiguity
+SEQUENCECOLLECTION_H	SequenceCollection.h	2;"	d
+SET_MAKE	Makefile	/^SET_MAKE = $/;"	m
+SF_DELETE	KmerData.h	/^	SF_DELETE = 0x4,$/;"	e	enum:SeqFlag
+SF_MARK_ANTISENSE	KmerData.h	/^	SF_MARK_ANTISENSE = 0x2,$/;"	e	enum:SeqFlag
+SF_MARK_SENSE	KmerData.h	/^	SF_MARK_SENSE = 0x1,$/;"	e	enum:SeqFlag
+SHELL	Makefile	/^SHELL = \/bin\/bash$/;"	m
+SOURCES	Makefile	/^SOURCES = $(libassembly_a_SOURCES)$/;"	m
+STRIP	Makefile	/^STRIP = $/;"	m
+SeqContiguity	AssemblyAlgorithms.h	/^enum SeqContiguity$/;"	g
+SeqFlag	KmerData.h	/^enum SeqFlag$/;"	g
+SeqObserver	ISequenceCollection.h	/^		typedef void (*SeqObserver)(ISequenceCollection* c,$/;"	t	class:ISequenceCollection
+SequenceCollectionHash	SequenceCollection.cpp	/^SequenceCollectionHash::SequenceCollectionHash()$/;"	f	class:SequenceCollectionHash
+SequenceCollectionHash	SequenceCollection.h	/^class SequenceCollectionHash : public ISequenceCollection$/;"	c
+SequenceDataHash	ISequenceCollection.h	/^	SequenceDataHash;$/;"	t
+USAGE_MESSAGE	Options.cpp	/^static const char USAGE_MESSAGE[] =$/;"	m	namespace:opt	file:
+VERSION	Makefile	/^VERSION = 1.5.1$/;"	m
+VERSION_MESSAGE	Options.cpp	/^static const char VERSION_MESSAGE[] =$/;"	m	namespace:opt	file:
+abs_builddir	Makefile	/^abs_builddir = \/home\/qiuqiyuan\/git-repos\/abyss_mod\/Assembly$/;"	m
+abs_srcdir	Makefile	/^abs_srcdir = \/home\/qiuqiyuan\/git-repos\/abyss_mod\/Assembly$/;"	m
+abs_top_builddir	Makefile	/^abs_top_builddir = \/home\/qiuqiyuan\/git-repos\/abyss_mod$/;"	m
+abs_top_srcdir	Makefile	/^abs_top_srcdir = \/home\/qiuqiyuan\/git-repos\/abyss_mod$/;"	m
+ac_ct_CC	Makefile	/^ac_ct_CC = gcc$/;"	m
+ac_ct_CXX	Makefile	/^ac_ct_CXX = g++$/;"	m
+add	SequenceCollection.cpp	/^void SequenceCollectionHash::add(const Kmer& seq, unsigned coverage)$/;"	f	class:SequenceCollectionHash
+addBranch	BranchGroup.h	/^		BranchRecord& addBranch(const BranchRecord& branch)$/;"	f	class:BranchGroup
+addBranch	BranchGroup.h	/^		void addBranch(const BranchRecord& branch,$/;"	f	class:BranchGroup
+addMultiplicity	KmerData.h	/^	void addMultiplicity(extDirection dir, unsigned n = 1)$/;"	f	class:KmerData
+adjacency_iterator	DotWriter.cpp	/^typedef graph_traits<Graph>::adjacency_iterator adjacency_iterator;$/;"	t	file:
+adjacency_iterator	SequenceCollection.h	/^	adjacency_iterator($/;"	f	struct:boost::graph_traits::adjacency_iterator
+adjacency_iterator	SequenceCollection.h	/^	adjacency_iterator() : m_i(NUM_BASES) { }$/;"	f	struct:boost::graph_traits::adjacency_iterator
+adjacency_iterator	SequenceCollection.h	/^struct adjacency_iterator$/;"	s	struct:boost::graph_traits
+adjacent_vertices	SequenceCollection.h	/^adjacent_vertices($/;"	f
+am__aclocal_m4_deps	Makefile	/^am__aclocal_m4_deps = $(top_srcdir)\/configure.ac$/;"	m
+am__can_run_installinfo	Makefile	/^am__can_run_installinfo = \\$/;"	m
+am__cd	Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
+am__configure_deps	Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m
+am__define_uniq_tagged_files	Makefile	/^am__define_uniq_tagged_files = \\$/;"	m
+am__depfiles_maybe	Makefile	/^am__depfiles_maybe = depfiles$/;"	m
+am__include	Makefile	/^am__include = include$/;"	m
+am__is_gnu_make	Makefile	/^am__is_gnu_make = test -n '$(MAKEFILE_LIST)' && test -n '$(MAKELEVEL)'$/;"	m
+am__leading_dot	Makefile	/^am__leading_dot = .$/;"	m
+am__make_dryrun	Makefile	/^am__make_dryrun = (target_option=n; $(am__make_running_with_option))$/;"	m
+am__make_keepgoing	Makefile	/^am__make_keepgoing = (target_option=k; $(am__make_running_with_option))$/;"	m
+am__make_running_with_option	Makefile	/^am__make_running_with_option = \\$/;"	m
+am__mv	Makefile	/^am__mv = mv -f$/;"	m
+am__quote	Makefile	/^am__quote = $/;"	m
+am__tagged_files	Makefile	/^am__tagged_files = $(HEADERS) $(SOURCES) $(TAGS_FILES) $(LISP)$/;"	m
+am__tar	Makefile	/^am__tar = $${TAR-tar} chof - "$$tardir"$/;"	m
+am__uniquify_input	Makefile	/^am__uniquify_input = $(AWK) '\\$/;"	m
+am__untar	Makefile	/^am__untar = $${TAR-tar} xf -$/;"	m
+am__v_AR_	Makefile	/^am__v_AR_ = $(am__v_AR_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_AR_0	Makefile	/^am__v_AR_0 = @echo "  AR      " $@;$/;"	m
+am__v_AR_1	Makefile	/^am__v_AR_1 = $/;"	m
+am__v_CCLD_	Makefile	/^am__v_CCLD_ = $(am__v_CCLD_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_CCLD_0	Makefile	/^am__v_CCLD_0 = @echo "  CCLD    " $@;$/;"	m
+am__v_CCLD_1	Makefile	/^am__v_CCLD_1 = $/;"	m
+am__v_CC_	Makefile	/^am__v_CC_ = $(am__v_CC_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_CC_0	Makefile	/^am__v_CC_0 = @echo "  CC      " $@;$/;"	m
+am__v_CC_1	Makefile	/^am__v_CC_1 = $/;"	m
+am__v_CXXLD_	Makefile	/^am__v_CXXLD_ = $(am__v_CXXLD_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_CXXLD_0	Makefile	/^am__v_CXXLD_0 = @echo "  CXXLD   " $@;$/;"	m
+am__v_CXXLD_1	Makefile	/^am__v_CXXLD_1 = $/;"	m
+am__v_CXX_	Makefile	/^am__v_CXX_ = $(am__v_CXX_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_CXX_0	Makefile	/^am__v_CXX_0 = @echo "  CXX     " $@;$/;"	m
+am__v_CXX_1	Makefile	/^am__v_CXX_1 = $/;"	m
+am__v_GEN_	Makefile	/^am__v_GEN_ = $(am__v_GEN_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_GEN_0	Makefile	/^am__v_GEN_0 = @echo "  GEN     " $@;$/;"	m
+am__v_GEN_1	Makefile	/^am__v_GEN_1 = $/;"	m
+am__v_P_	Makefile	/^am__v_P_ = $(am__v_P_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_P_0	Makefile	/^am__v_P_0 = false$/;"	m
+am__v_P_1	Makefile	/^am__v_P_1 = :$/;"	m
+am__v_at_	Makefile	/^am__v_at_ = $(am__v_at_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_at_0	Makefile	/^am__v_at_0 = @$/;"	m
+am__v_at_1	Makefile	/^am__v_at_1 = $/;"	m
+am__v_lt_	Makefile	/^am__v_lt_ = $(am__v_lt_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_lt_0	Makefile	/^am__v_lt_0 = --silent$/;"	m
+am__v_lt_1	Makefile	/^am__v_lt_1 = $/;"	m
+am_libassembly_a_OBJECTS	Makefile	/^am_libassembly_a_OBJECTS = libassembly_a-AssemblyAlgorithms.$(OBJEXT) \\$/;"	m
+assemble	AssemblyAlgorithms.cpp	/^size_t assemble(SequenceCollectionHash* seqCollection,$/;"	f	namespace:AssemblyAlgorithms
+assembleContig	AssemblyAlgorithms.cpp	/^size_t assembleContig($/;"	f	namespace:AssemblyAlgorithms
+attach	SequenceCollection.h	/^		void attach(SeqObserver f)$/;"	f	class:SequenceCollectionHash
+back	BranchRecord.h	/^		const value_type& back() const$/;"	f	class:BranchRecord
+begin	BranchGroup.h	/^		const_iterator begin() const { return m_branches.begin(); }$/;"	f	class:BranchGroup
+begin	BranchGroup.h	/^		iterator begin() { return m_branches.begin(); }$/;"	f	class:BranchGroup
+begin	BranchRecord.h	/^		const_iterator begin() const { return m_data.begin(); }$/;"	f	class:BranchRecord
+begin	BranchRecord.h	/^		iterator begin() { return m_data.begin(); }$/;"	f	class:BranchRecord
+begin	SequenceCollection.h	/^		const_iterator begin() const { return m_data.begin(); }$/;"	f	class:SequenceCollectionHash
+begin	SequenceCollection.h	/^		iterator begin() { return m_data.begin(); }$/;"	f	class:SequenceCollectionHash
+bindir	Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m
+boost	SequenceCollection.h	/^namespace boost {$/;"	n
+bubbleLen	Options.cpp	/^int bubbleLen = -1;$/;"	m	namespace:opt	file:
+build_alias	Makefile	/^build_alias = $/;"	m
+builddir	Makefile	/^builddir = .$/;"	m
+calculateBranchMultiplicity	BranchRecord.cpp	/^int BranchRecord::calculateBranchMultiplicity() const$/;"	f	class:BranchRecord
+calculateCoverageThreshold	AssemblyAlgorithms.cpp	/^static float calculateCoverageThreshold(const Histogram& h)$/;"	f	namespace:AssemblyAlgorithms
+checkSeqContiguity	AssemblyAlgorithms.cpp	/^SeqContiguity checkSeqContiguity($/;"	f	namespace:AssemblyAlgorithms
+cleanup	SequenceCollection.cpp	/^size_t SequenceCollectionHash::cleanup()$/;"	f	class:SequenceCollectionHash
+clearExtensions	ISequenceCollection.h	/^		void clearExtensions(const Kmer& seq, extDirection dir)$/;"	f	class:ISequenceCollection
+clearFlag	KmerData.h	/^	void clearFlag(SeqFlag flag) { m_flags &= ~flag; }$/;"	f	class:KmerData
+collapseJoinedBranches	AssemblyAlgorithms.cpp	/^void collapseJoinedBranches(ISequenceCollection* collection,$/;"	f	namespace:AssemblyAlgorithms
+complement	KmerData.h	/^static inline SeqFlag complement(SeqFlag flag)$/;"	f
+complementBaseCode	SequenceCollection.cpp	/^static inline uint8_t complementBaseCode(uint8_t base)$/;"	f	file:
+const_iterator	BranchGroup.h	/^		typedef BranchGroupData::const_iterator const_iterator;$/;"	t	class:BranchGroup
+const_iterator	BranchRecord.h	/^		typedef BranchData::const_iterator const_iterator;$/;"	t	class:BranchRecord
+const_iterator	ISequenceCollection.h	/^		typedef SequenceDataHash::const_iterator const_iterator;$/;"	t	class:ISequenceCollection
+contigsPath	Options.cpp	/^string contigsPath;$/;"	m	namespace:opt	file:
+contigsTempPath	Options.cpp	/^string contigsTempPath;$/;"	m	namespace:opt	file:
+coverage	Options.cpp	/^float coverage = -1;$/;"	m	namespace:opt	file:
+coverageHistPath	Options.cpp	/^string coverageHistPath;$/;"	m	namespace:opt	file:
+coverageHistogram	AssemblyAlgorithms.cpp	/^Histogram coverageHistogram(const ISequenceCollection& c)$/;"	f	namespace:AssemblyAlgorithms
+datadir	Makefile	/^datadir = ${datarootdir}$/;"	m
+datarootdir	Makefile	/^datarootdir = ${prefix}\/share$/;"	m
+degree_size_type	SequenceCollection.h	/^	typedef unsigned degree_size_type;$/;"	t	struct:boost::graph_traits
+deleted	KmerData.h	/^	bool deleted() const { return isFlagSet(SF_DELETE); }$/;"	f	class:KmerData
+depcomp	Makefile	/^depcomp = $(SHELL) $(top_srcdir)\/depcomp$/;"	m
+detach	SequenceCollection.h	/^		void detach(SeqObserver f)$/;"	f	class:SequenceCollectionHash
+dir	KmerData.h	/^	SeqExt dir[2];$/;"	m	struct:ExtensionRecord
+directed_category	SequenceCollection.h	/^	typedef boost::directed_tag directed_category;$/;"	t	struct:boost::graph_traits
+docdir	Makefile	/^docdir = ${datarootdir}\/doc\/${PACKAGE_TARNAME}$/;"	m
+dvidir	Makefile	/^dvidir = ${docdir}$/;"	m
+edge_descriptor	SequenceCollection.h	/^		edge_descriptor;$/;"	t	struct:boost::graph_traits
+edge_iterator	SequenceCollection.h	/^	typedef void edge_iterator;$/;"	t	struct:boost::graph_traits
+edge_parallel_category	SequenceCollection.h	/^	typedef boost::disallow_parallel_edge_tag edge_parallel_category;$/;"	t	struct:boost::graph_traits
+edge_property_type	SequenceCollection.h	/^		typedef no_property edge_property_type;$/;"	t	class:SequenceCollectionHash
+edges_size_type	SequenceCollection.h	/^	typedef void edges_size_type;$/;"	t	struct:boost::graph_traits
+empty	BranchRecord.h	/^		bool empty() const { return m_data.empty(); }$/;"	f	class:BranchRecord
+empty	SequenceCollection.h	/^		bool empty() const { return m_data.empty(); }$/;"	f	class:SequenceCollectionHash
+end	BranchGroup.h	/^		const_iterator end() const { return m_branches.end(); }$/;"	f	class:BranchGroup
+end	BranchGroup.h	/^		iterator end() { return m_branches.end(); }$/;"	f	class:BranchGroup
+end	BranchRecord.h	/^		const_iterator end() const { return m_data.end(); }$/;"	f	class:BranchRecord
+end	BranchRecord.h	/^		iterator end() { return m_data.end(); }$/;"	f	class:BranchRecord
+end	SequenceCollection.h	/^		const_iterator end() const { return m_data.end(); }$/;"	f	class:SequenceCollectionHash
+end	SequenceCollection.h	/^		iterator end() { return m_data.end(); }$/;"	f	class:SequenceCollectionHash
+erode	AssemblyAlgorithms.cpp	/^size_t erode(ISequenceCollection* c,$/;"	f	namespace:AssemblyAlgorithms
+erode	Options.cpp	/^unsigned erode = (unsigned)-1;$/;"	m	namespace:opt	file:
+erodeEnds	AssemblyAlgorithms.cpp	/^size_t erodeEnds(ISequenceCollection* seqCollection)$/;"	f	namespace:AssemblyAlgorithms
+erodeStrand	Options.cpp	/^unsigned erodeStrand = (unsigned)-1;$/;"	m	namespace:opt	file:
+erosionObserver	AssemblyAlgorithms.cpp	/^static void erosionObserver(ISequenceCollection* c,$/;"	f	namespace:AssemblyAlgorithms
+exec_prefix	Makefile	/^exec_prefix = ${prefix}$/;"	m
+exists	BranchGroup.h	/^		bool exists(unsigned i, const Kmer& kmer) const$/;"	f	class:BranchGroup
+exists	BranchRecord.h	/^		bool exists(unsigned i, const Kmer& kmer) const$/;"	f	class:BranchRecord
+extendBranch	AssemblyAlgorithms.cpp	/^bool extendBranch(BranchRecord& branch, Kmer& kmer, SeqExt ext)$/;"	f	namespace:AssemblyAlgorithms
+extension	KmerData.h	/^	ExtensionRecord extension() const { return m_ext; }$/;"	f	class:KmerData
+find	SequenceCollection.cpp	/^SequenceCollectionHash::const_iterator SequenceCollectionHash::find($/;"	f	class:SequenceCollectionHash
+find	SequenceCollection.cpp	/^SequenceCollectionHash::iterator SequenceCollectionHash::find($/;"	f	class:SequenceCollectionHash
+find	SequenceCollection.h	/^		const_iterator find(const Kmer& key) const$/;"	f	class:SequenceCollectionHash
+find	SequenceCollection.h	/^		iterator find(const Kmer& key) { return m_data.find(key); }$/;"	f	class:SequenceCollectionHash
+front	BranchRecord.h	/^		const value_type& front() const$/;"	f	class:BranchRecord
+g_numEroded	AssemblyAlgorithms.cpp	/^static size_t g_numEroded;$/;"	m	namespace:AssemblyAlgorithms	file:
+generateAdjacency	AssemblyAlgorithms.cpp	/^void generateAdjacency(ISequenceCollection* seqCollection)$/;"	f	namespace:AssemblyAlgorithms
+generateSequencesFromExtension	AssemblyAlgorithms.cpp	/^void generateSequencesFromExtension(const Kmer& currSeq,$/;"	f	namespace:AssemblyAlgorithms
+get	SequenceCollection.h	/^bool get(vertex_removed_t, const SequenceCollectionHash& g,$/;"	f
+get	SequenceCollection.h	/^get(vertex_complement_t, const SequenceCollectionHash&,$/;"	f
+get	SequenceCollection.h	/^no_property get(edge_bundle_t, const SequenceCollectionHash&,$/;"	f
+getDirection	BranchGroup.h	/^		extDirection getDirection() const { return m_dir; }$/;"	f	class:BranchGroup
+getDirection	BranchRecord.h	/^		extDirection getDirection() const { return m_dir; }$/;"	f	class:BranchRecord
+getExtension	KmerData.h	/^	SeqExt getExtension(extDirection dir) const$/;"	f	class:KmerData
+getMultiplicity	KmerData.h	/^	unsigned getMultiplicity() const$/;"	f	class:KmerData
+getMultiplicity	KmerData.h	/^	unsigned getMultiplicity(extDirection dir) const$/;"	f	class:KmerData
+getNumEroded	AssemblyAlgorithms.cpp	/^size_t getNumEroded()$/;"	f	namespace:AssemblyAlgorithms
+getSeqAndData	SequenceCollection.cpp	/^getSeqAndData(const Kmer& key) const$/;"	f	class:SequenceCollectionHash
+getSeqData	SequenceCollection.cpp	/^bool SequenceCollectionHash::getSeqData(const Kmer& key,$/;"	f	class:SequenceCollectionHash
+getState	BranchRecord.h	/^		BranchState getState() const { return m_state;	}$/;"	f	class:BranchRecord
+getStatus	BranchGroup.h	/^		BranchGroupStatus getStatus() const { return m_status; }$/;"	f	class:BranchGroup
+graphPath	Options.cpp	/^string graphPath;$/;"	m	namespace:opt	file:
+graph_traits	SequenceCollection.h	/^struct graph_traits<SequenceCollectionHash> {$/;"	s	namespace:boost
+hasExtension	KmerData.h	/^	bool hasExtension(extDirection dir) const$/;"	f	class:KmerData
+host_alias	Makefile	/^host_alias = $/;"	m
+htmldir	Makefile	/^htmldir = ${docdir}$/;"	m
+inFiles	Options.cpp	/^vector<string> inFiles;$/;"	m	namespace:opt	file:
+in_degree	SequenceCollection.h	/^in_degree(graph_traits<SequenceCollectionHash>::vertex_descriptor u,$/;"	f
+in_edge_iterator	SequenceCollection.h	/^	typedef void in_edge_iterator;$/;"	t	struct:boost::graph_traits
+includedir	Makefile	/^includedir = ${prefix}\/include$/;"	m
+infodir	Makefile	/^infodir = ${datarootdir}\/info$/;"	m
+initiateBranchGroup	AssemblyAlgorithms.cpp	/^void initiateBranchGroup(BranchGroup& group, const Kmer& seq,$/;"	f	namespace:AssemblyAlgorithms
+install_sh	Makefile	/^install_sh = ${SHELL} \/home\/qiuqiyuan\/git-repos\/abyss_mod\/install-sh$/;"	m
+install_sh_DATA	Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m
+install_sh_PROGRAM	Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
+install_sh_SCRIPT	Makefile	/^install_sh_SCRIPT = $(install_sh) -c$/;"	m
+isActive	BranchGroup.cpp	/^bool BranchGroup::isActive() const$/;"	f	class:BranchGroup
+isActive	BranchRecord.h	/^		bool isActive() const { return m_state == BS_ACTIVE; }$/;"	f	class:BranchRecord
+isAdjacencyLoaded	SequenceCollection.h	/^		bool isAdjacencyLoaded() const { return m_adjacencyLoaded; }$/;"	f	class:SequenceCollectionHash
+isAmbiguous	BranchGroup.cpp	/^bool BranchGroup::isAmbiguous(const SequenceCollectionHash& g) const$/;"	f	class:BranchGroup
+isAmbiguous	KmerData.h	/^	bool isAmbiguous(extDirection dir) const$/;"	f	class:KmerData
+isCanonical	BranchRecord.cpp	/^bool BranchRecord::isCanonical() const$/;"	f	class:BranchRecord
+isExtendable	BranchGroup.cpp	/^bool BranchGroup::isExtendable()$/;"	f	class:BranchGroup
+isFlagSet	KmerData.h	/^	bool isFlagSet(SeqFlag flag) const { return m_flags & flag; }$/;"	f	class:KmerData
+isNoExt	BranchGroup.h	/^		bool isNoExt() const { return m_noExt; }$/;"	f	class:BranchGroup
+isTooLong	BranchRecord.h	/^		bool isTooLong(unsigned maxLength) const$/;"	f	class:BranchRecord
+iterator	BranchGroup.h	/^		typedef BranchGroupData::iterator iterator;$/;"	t	class:BranchGroup
+iterator	BranchRecord.h	/^		typedef BranchData::iterator iterator;$/;"	t	class:BranchRecord
+iterator	ISequenceCollection.h	/^		typedef SequenceDataHash::iterator iterator;$/;"	t	class:ISequenceCollection
+k	Options.cpp	/^int k; \/\/ used by Graph$/;"	m	namespace:opt	file:
+kMax	Options.cpp	/^int kMax = -1;$/;"	m	namespace:opt	file:
+kMin	Options.cpp	/^int kMin = -1;$/;"	m	namespace:opt	file:
+kStep	Options.cpp	/^int kStep = 1;$/;"	m	namespace:opt	file:
+key_type	SequenceCollection.h	/^		typedef SequenceDataHash::key_type key_type;$/;"	t	class:SequenceCollectionHash
+kmerSize	Options.cpp	/^int kmerSize = -1;$/;"	m	namespace:opt	file:
+libassembly_a_AR	Makefile	/^libassembly_a_AR = $(AR) $(ARFLAGS)$/;"	m
+libassembly_a_CPPFLAGS	Makefile	/^libassembly_a_CPPFLAGS = -I$(top_srcdir) \\$/;"	m
+libassembly_a_LIBADD	Makefile	/^libassembly_a_LIBADD =$/;"	m
+libassembly_a_OBJECTS	Makefile	/^libassembly_a_OBJECTS = $(am_libassembly_a_OBJECTS)$/;"	m
+libassembly_a_SOURCES	Makefile	/^libassembly_a_SOURCES = \\$/;"	m
+libdir	Makefile	/^libdir = ${exec_prefix}\/lib$/;"	m
+libexecdir	Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m
+load	SequenceCollection.cpp	/^void SequenceCollectionHash::load(const char* path)$/;"	f	class:SequenceCollectionHash
+loadKmer	AssemblyAlgorithms.cpp	/^static size_t loadKmer(ISequenceCollection& g, FastaReader& in)$/;"	f	namespace:AssemblyAlgorithms
+loadSequences	AssemblyAlgorithms.cpp	/^void loadSequences(ISequenceCollection* seqCollection, string inFile)$/;"	f	namespace:AssemblyAlgorithms
+localedir	Makefile	/^localedir = ${datarootdir}\/locale$/;"	m
+localstatedir	Makefile	/^localstatedir = ${prefix}\/var$/;"	m
+longopts	Options.cpp	/^static const struct option longopts[] = {$/;"	m	namespace:opt	typeref:struct:opt::option	file:
+m_adj	SequenceCollection.h	/^	SeqExt m_adj;$/;"	m	struct:boost::graph_traits::adjacency_iterator
+m_adjacencyLoaded	SequenceCollection.h	/^		bool m_adjacencyLoaded;$/;"	m	class:SequenceCollectionHash
+m_branches	BranchGroup.h	/^		BranchGroupData m_branches;$/;"	m	class:BranchGroup
+m_data	BranchRecord.h	/^		BranchData m_data;$/;"	m	class:BranchRecord
+m_data	SequenceCollection.h	/^		SequenceDataHash m_data;$/;"	m	class:SequenceCollectionHash
+m_dir	BranchGroup.h	/^		extDirection m_dir;$/;"	m	class:BranchGroup
+m_dir	BranchRecord.h	/^		extDirection m_dir;$/;"	m	class:BranchRecord
+m_ext	KmerData.h	/^	ExtensionRecord m_ext;$/;"	m	class:KmerData
+m_flags	KmerData.h	/^	uint8_t m_flags;$/;"	m	class:KmerData
+m_i	SequenceCollection.h	/^	short unsigned m_i;$/;"	m	struct:boost::graph_traits::adjacency_iterator
+m_it	SequenceCollection.h	/^	It m_it;$/;"	m	struct:boost::graph_traits::vertex_iterator
+m_maxNumBranches	BranchGroup.h	/^		size_t m_maxNumBranches;$/;"	m	class:BranchGroup
+m_multiplicity	KmerData.h	/^	uint16_t m_multiplicity[2];$/;"	m	class:KmerData
+m_noExt	BranchGroup.h	/^		bool m_noExt;$/;"	m	class:BranchGroup
+m_origin	BranchGroup.h	/^ 		Kmer m_origin;$/;"	m	class:BranchGroup
+m_sense	SequenceCollection.h	/^	bool m_sense;$/;"	m	struct:boost::graph_traits::vertex_iterator
+m_seqObserver	SequenceCollection.h	/^		SeqObserver m_seqObserver;$/;"	m	class:SequenceCollectionHash
+m_state	BranchRecord.h	/^		BranchState m_state;$/;"	m	class:BranchRecord
+m_status	BranchGroup.h	/^		BranchGroupStatus m_status;$/;"	m	class:BranchGroup
+m_v	SequenceCollection.h	/^	vertex_descriptor m_v;$/;"	m	struct:boost::graph_traits::adjacency_iterator
+mandir	Makefile	/^mandir = ${datarootdir}\/man$/;"	m
+mapped_type	SequenceCollection.h	/^		typedef SequenceDataHash::mapped_type mapped_type;$/;"	t	class:SequenceCollectionHash
+mark	ISequenceCollection.h	/^		void mark(const Kmer& seq)$/;"	f	class:ISequenceCollection
+mark	ISequenceCollection.h	/^		void mark(const Kmer& seq, extDirection sense)$/;"	f	class:ISequenceCollection
+markAmbiguous	AssemblyAlgorithms.cpp	/^size_t markAmbiguous(ISequenceCollection* g)$/;"	f	namespace:AssemblyAlgorithms
+markNeighbours	AssemblyAlgorithms.cpp	/^static size_t markNeighbours(ISequenceCollection* g,$/;"	f	namespace:AssemblyAlgorithms
+marked	KmerData.h	/^	bool marked() const$/;"	f	class:KmerData
+marked	KmerData.h	/^	bool marked(extDirection sense) const$/;"	f	class:KmerData
+mkdir_p	Makefile	/^mkdir_p = $(MKDIR_P)$/;"	m
+mkinstalldirs	Makefile	/^mkinstalldirs = $(install_sh) -d$/;"	m
+next	SequenceCollection.h	/^	void next()$/;"	f	struct:boost::graph_traits::adjacency_iterator
+noinst_LIBRARIES	Makefile	/^noinst_LIBRARIES = libassembly.a$/;"	m
+notify	SequenceCollection.h	/^		void notify(const value_type& seq)$/;"	f	class:SequenceCollectionHash
+oldincludedir	Makefile	/^oldincludedir = \/usr\/include$/;"	m
+openBubbleFile	AssemblyAlgorithms.cpp	/^void openBubbleFile(ofstream& out)$/;"	f	namespace:AssemblyAlgorithms
+operator !=	SequenceCollection.h	/^	bool operator!=(const adjacency_iterator& it) const$/;"	f	struct:boost::graph_traits::adjacency_iterator
+operator !=	SequenceCollection.h	/^	bool operator!=(const vertex_iterator& it) const$/;"	f	struct:boost::graph_traits::vertex_iterator
+operator *	SequenceCollection.h	/^	const vertex_descriptor operator*() const$/;"	f	struct:boost::graph_traits::vertex_iterator
+operator *	SequenceCollection.h	/^	const vertex_descriptor& operator*() const$/;"	f	struct:boost::graph_traits::adjacency_iterator
+operator ++	SequenceCollection.h	/^	adjacency_iterator& operator++()$/;"	f	struct:boost::graph_traits::adjacency_iterator
+operator ++	SequenceCollection.h	/^	vertex_iterator& operator++()$/;"	f	struct:boost::graph_traits::vertex_iterator
+operator <<	KmerData.h	/^	friend std::ostream& operator<<($/;"	f	class:KmerData
+operator ==	SequenceCollection.h	/^	bool operator==(const adjacency_iterator& it) const$/;"	f	struct:boost::graph_traits::adjacency_iterator
+operator ==	SequenceCollection.h	/^	bool operator==(const vertex_iterator& it) const$/;"	f	struct:boost::graph_traits::vertex_iterator
+operator Sequence	BranchRecord.cpp	/^BranchRecord::operator Sequence() const$/;"	f	class:BranchRecord
+operator []	BranchGroup.h	/^		BranchRecord& operator [](unsigned id)$/;"	f	class:BranchGroup
+operator []	SequenceCollection.h	/^		const mapped_type operator[](const key_type& key) const$/;"	f	class:SequenceCollectionHash
+operator ~	KmerData.h	/^	ExtensionRecord operator ~() const$/;"	f	struct:ExtensionRecord
+operator ~	KmerData.h	/^	KmerData operator~() const$/;"	f	class:KmerData
+opt	Options.cpp	/^namespace opt {$/;"	n	file:
+opt	Options.h	/^namespace opt {$/;"	n
+out_degree	SequenceCollection.h	/^out_degree($/;"	f
+out_edge_iterator	SequenceCollection.h	/^	typedef void out_edge_iterator;$/;"	t	struct:boost::graph_traits
+parse	Options.cpp	/^void parse(int argc, char* const* argv)$/;"	f	namespace:opt
+pdfdir	Makefile	/^pdfdir = ${docdir}$/;"	m
+performTrim	AssemblyAlgorithms.cpp	/^void performTrim(SequenceCollectionHash* seqCollection)$/;"	f	namespace:AssemblyAlgorithms
+pkgdatadir	Makefile	/^pkgdatadir = $(datadir)\/abyss$/;"	m
+pkgincludedir	Makefile	/^pkgincludedir = $(includedir)\/abyss$/;"	m
+pkglibdir	Makefile	/^pkglibdir = $(libdir)\/abyss$/;"	m
+pkglibexecdir	Makefile	/^pkglibexecdir = $(libexecdir)\/abyss$/;"	m
+popBubbles	AssemblyAlgorithms.cpp	/^size_t popBubbles(SequenceCollectionHash* seqCollection, ostream& out)$/;"	f	namespace:AssemblyAlgorithms
+pop_back	BranchRecord.h	/^		void pop_back()$/;"	f	class:BranchRecord
+prefix	Makefile	/^prefix = \/home\/qiuqiyuan\/git-repos\/abyss_mod\/release$/;"	m
+printLoad	SequenceCollection.cpp	/^void SequenceCollectionHash::printLoad() const$/;"	f	class:SequenceCollectionHash
+processBranchGroupExtension	AssemblyAlgorithms.cpp	/^bool processBranchGroupExtension(BranchGroup& group,$/;"	f	namespace:AssemblyAlgorithms
+processLinearExtensionForBranch	AssemblyAlgorithms.cpp	/^bool processLinearExtensionForBranch(BranchRecord& branch,$/;"	f	namespace:AssemblyAlgorithms
+processTerminatedBranchTrim	AssemblyAlgorithms.cpp	/^bool processTerminatedBranchTrim(ISequenceCollection* seqCollection,$/;"	f	namespace:AssemblyAlgorithms
+program_transform_name	Makefile	/^program_transform_name = s,x,x,$/;"	m
+psdir	Makefile	/^psdir = ${docdir}$/;"	m
+pumpNetwork	SequenceCollection.h	/^		size_t pumpNetwork() { return 0; }$/;"	f	class:SequenceCollectionHash
+push_back	BranchRecord.h	/^		void push_back(const value_type& x) { m_data.push_back(x); }$/;"	f	class:BranchRecord
+remove	SequenceCollection.h	/^		void remove(const Kmer& seq)$/;"	f	class:SequenceCollectionHash
+removeExtension	ISequenceCollection.h	/^		void removeExtension(const Kmer& seq,$/;"	f	class:ISequenceCollection
+removeExtension	KmerData.h	/^	void removeExtension(extDirection dir, SeqExt ext)$/;"	f	class:KmerData
+removeExtension	SequenceCollection.cpp	/^void SequenceCollectionHash::removeExtension(const Kmer& kmer,$/;"	f	class:SequenceCollectionHash
+removeExtensionsToSequence	AssemblyAlgorithms.cpp	/^void removeExtensionsToSequence(ISequenceCollection* seqCollection,$/;"	f	namespace:AssemblyAlgorithms
+removeMarked	AssemblyAlgorithms.cpp	/^size_t removeMarked(ISequenceCollection* pSC)$/;"	f	namespace:AssemblyAlgorithms
+removeSequenceAndExtensions	AssemblyAlgorithms.cpp	/^void removeSequenceAndExtensions(ISequenceCollection* seqCollection,$/;"	f	namespace:AssemblyAlgorithms
+sbindir	Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m
+setBaseExtension	KmerData.h	/^	void setBaseExtension(extDirection dir, uint8_t base)$/;"	f	class:KmerData
+setBaseExtension	SequenceCollection.cpp	/^bool SequenceCollectionHash::setBaseExtension($/;"	f	class:SequenceCollectionHash
+setColourSpace	SequenceCollection.cpp	/^void SequenceCollectionHash::setColourSpace(bool flag)$/;"	f	class:SequenceCollectionHash
+setCoverageParameters	AssemblyAlgorithms.cpp	/^void setCoverageParameters(const Histogram& h)$/;"	f	namespace:AssemblyAlgorithms
+setData	BranchRecord.h	/^		void setData(const value_type& o)$/;"	f	class:BranchRecord
+setDeletedKey	SequenceCollection.cpp	/^void SequenceCollectionHash::setDeletedKey()$/;"	f	class:SequenceCollectionHash
+setFlag	KmerData.h	/^	void setFlag(SeqFlag flag) { m_flags |= flag; }$/;"	f	class:KmerData
+setFlag	SequenceCollection.cpp	/^void SequenceCollectionHash::setFlag(const Kmer& key, SeqFlag flag)$/;"	f	class:SequenceCollectionHash
+setMultiplicity	KmerData.h	/^	void setMultiplicity(unsigned multiplicity)$/;"	f	class:KmerData
+setNoExtension	BranchGroup.h	/^		void setNoExtension() { m_noExt = true; }$/;"	f	class:BranchGroup
+sharedstatedir	Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m
+shortopts	Options.cpp	/^static const char shortopts[] = "b:c:e:E:g:k:o:Q:q:s:t:v";$/;"	m	namespace:opt	file:
+shrink	SequenceCollection.h	/^		void shrink() {$/;"	f	class:SequenceCollectionHash
+size	BranchGroup.h	/^		size_t size() const { return m_branches.size(); }$/;"	f	class:BranchGroup
+size	BranchRecord.h	/^		size_t size() const { return m_data.size(); }$/;"	f	class:BranchRecord
+size	SequenceCollection.h	/^		size_t size() const { return m_data.size(); }$/;"	f	class:SequenceCollectionHash
+snpPath	Options.cpp	/^string snpPath;$/;"	m	namespace:opt	file:
+splitAmbiguous	AssemblyAlgorithms.cpp	/^size_t splitAmbiguous(ISequenceCollection* pSC)$/;"	f	namespace:AssemblyAlgorithms
+srcdir	Makefile	/^srcdir = .$/;"	m
+ss	Options.cpp	/^int ss = 0;$/;"	m	namespace:opt	file:
+std	BranchGroup.h	/^namespace std {$/;"	n
+std	BranchRecord.h	/^namespace std {$/;"	n
+store	SequenceCollection.cpp	/^void SequenceCollectionHash::store(const char* path)$/;"	f	class:SequenceCollectionHash
+subdir	Makefile	/^subdir = Assembly$/;"	m
+swap	BranchGroup.h	/^	inline void swap(BranchGroup&, BranchGroup&) { assert(false); }$/;"	f	namespace:std
+swap	BranchRecord.h	/^		void swap(BranchRecord& o)$/;"	f	class:BranchRecord
+swap	BranchRecord.h	/^	inline void swap(BranchRecord& a, BranchRecord& b)$/;"	f	namespace:std
+sysconfdir	Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m
+target_alias	Makefile	/^target_alias = $/;"	m
+terminate	BranchRecord.h	/^		void terminate(BranchState reason)$/;"	f	class:BranchRecord
+top_build_prefix	Makefile	/^top_build_prefix = ..\/$/;"	m
+top_builddir	Makefile	/^top_builddir = ..$/;"	m
+top_srcdir	Makefile	/^top_srcdir = ..$/;"	m
+transform	Makefile	/^transform = $(program_transform_name)$/;"	m
+traversal_category	SequenceCollection.h	/^	struct traversal_category$/;"	s	struct:boost::graph_traits
+trimLen	Options.cpp	/^int trimLen = -1;$/;"	m	namespace:opt	file:
+trimSequences	AssemblyAlgorithms.cpp	/^static size_t trimSequences(SequenceCollectionHash* seqCollection,$/;"	f	namespace:AssemblyAlgorithms
+updateStatus	BranchGroup.cpp	/^BranchGroupStatus BranchGroup::updateStatus(unsigned maxLength)$/;"	f	class:BranchGroup
+value_type	BranchRecord.h	/^		typedef std::pair<Kmer, KmerData> value_type;$/;"	t	class:BranchRecord
+value_type	ISequenceCollection.h	/^		typedef SequenceDataHash::value_type value_type;$/;"	t	class:ISequenceCollection
+value_type	SequenceCollection.h	/^		typedef SequenceDataHash::value_type value_type;$/;"	t	class:SequenceCollectionHash
+vertex_descriptor	SequenceCollection.h	/^	typedef SequenceCollectionHash::key_type vertex_descriptor;$/;"	t	struct:boost::graph_traits
+vertex_iterator	DotWriter.cpp	/^typedef graph_traits<Graph>::vertex_iterator vertex_iterator;$/;"	t	file:
+vertex_iterator	SequenceCollection.h	/^	vertex_iterator(const It& it) : m_it(it), m_sense(false) { }$/;"	f	struct:boost::graph_traits::vertex_iterator
+vertex_iterator	SequenceCollection.h	/^struct vertex_iterator$/;"	s	struct:boost::graph_traits
+vertex_property_type	SequenceCollection.h	/^		typedef mapped_type vertex_property_type;$/;"	t	class:SequenceCollectionHash
+vertices	SequenceCollection.h	/^vertices(const SequenceCollectionHash& g)$/;"	f
+vertices_size_type	SequenceCollection.h	/^	typedef size_t vertices_size_type;$/;"	t	struct:boost::graph_traits
+wipeFlag	SequenceCollection.cpp	/^void SequenceCollectionHash::wipeFlag(SeqFlag flag)$/;"	f	class:SequenceCollectionHash
+write	DotWriter.cpp	/^void DotWriter::write(ostream& out, const Graph& g)$/;"	f	class:DotWriter
+writeBubble	AssemblyAlgorithms.cpp	/^void writeBubble(ostream& out, const BranchGroup& group, unsigned id)$/;"	f	namespace:AssemblyAlgorithms
+writeContig	DotWriter.cpp	/^static void writeContig(ostream& out, const Graph& g, const Kmer& u)$/;"	f	file:
+writeEdges	DotWriter.cpp	/^static void writeEdges(ostream& out, const Graph& g, const Kmer& u)$/;"	f	file:
+write_vertex	DotWriter.cpp	/^static void write_vertex(ostream& out, const Graph& g, const Kmer& u)$/;"	f	file:
+~ISequenceCollection	ISequenceCollection.h	/^		virtual ~ISequenceCollection() { }$/;"	f	class:ISequenceCollection
